@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 02:55:18 2019
+# Process ID: 3183
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/pcie4_uscale_plus_0_synth_1
+# Command line: vivado -log pcie4_uscale_plus_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pcie4_uscale_plus_0.tcl
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/pcie4_uscale_plus_0_synth_1/pcie4_uscale_plus_0.vds
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/pcie4_uscale_plus_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source pcie4_uscale_plus_0.tcl -notrace

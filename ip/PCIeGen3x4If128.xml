@@ -1,0 +1,2650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>unknown</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>PCIeGen3x4If128</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>8:07b009d7</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType">
+        <spirit:name>ARI_CAP_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.ARI_CAP_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>AXISTEN_IF_CC_ALIGNMENT_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_CC_ALIGNMENT_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>AXISTEN_IF_CQ_ALIGNMENT_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_CQ_ALIGNMENT_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>AXISTEN_IF_ENABLE_CLIENT_TAG</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_ENABLE_CLIENT_TAG">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>AXISTEN_IF_ENABLE_MSG_ROUTE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_ENABLE_MSG_ROUTE">0x00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>AXISTEN_IF_ENABLE_RX_MSG_INTFC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_ENABLE_RX_MSG_INTFC">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>AXISTEN_IF_RC_ALIGNMENT_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_RC_ALIGNMENT_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>AXISTEN_IF_RC_STRADDLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_RC_STRADDLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>AXISTEN_IF_RQ_ALIGNMENT_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_RQ_ALIGNMENT_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>CFG_CTL_IF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CFG_CTL_IF">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>CFG_EXT_IF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CFG_EXT_IF">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>CFG_FC_IF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CFG_FC_IF">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>CFG_MGMT_IF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CFG_MGMT_IF">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>CFG_STATUS_IF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CFG_STATUS_IF">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>CFG_TX_MSG_IF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CFG_TX_MSG_IF">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>COMPLETION_SPACE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COMPLETION_SPACE">16KB</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>C_DATA_WIDTH</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_WIDTH">128</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>DEV_PORT_TYPE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DEV_PORT_TYPE">00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>EXT_CH_GT_DRP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.EXT_CH_GT_DRP">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>EXT_PIPE_INTERFACE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.EXT_PIPE_INTERFACE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>EXT_STARTUP_PRIMITIVE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.EXT_STARTUP_PRIMITIVE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>MSIX_EN</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MSIX_EN">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>MSI_EN</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MSI_EN">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PCIE_DRP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PCIE_DRP">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PCIE_EXT_CLK</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PCIE_EXT_CLK">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PCIE_EXT_GT_COMMON</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PCIE_EXT_GT_COMMON">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PCIE_FAST_CONFIG</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PCIE_FAST_CONFIG">NONE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PCIE_LINK_SPEED</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PCIE_LINK_SPEED">3</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PCIE_USE_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PCIE_USE_MODE">2.1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PER_FUNC_STATUS_IF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PER_FUNC_STATUS_IF">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_AER_CAP_ECRC_CHECK_CAPABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_AER_CAP_ECRC_CHECK_CAPABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_AER_CAP_ECRC_GEN_CAPABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_AER_CAP_ECRC_GEN_CAPABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_AER_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_AER_CAP_NEXTPTR">0x300</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_ARI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_ARI_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_ARI_CAP_NEXT_FUNC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_ARI_CAP_NEXT_FUNC">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR0_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR0_APERTURE_SIZE">0b00011</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR0_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR0_CONTROL">0b100</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR1_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR1_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR1_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR1_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR2_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR2_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR2_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR2_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR3_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR3_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR3_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR3_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR4_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR4_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR4_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR4_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR5_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR5_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_BAR5_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR5_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_CAPABILITY_POINTER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_CAPABILITY_POINTER">0x80</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_CLASS_CODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_CLASS_CODE">0x058000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEVICE_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEVICE_ID">0x7034</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEV_CAP2_LTR_SUPPORT</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP2_LTR_SUPPORT">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEV_CAP2_OBFF_SUPPORT</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP2_OBFF_SUPPORT">00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEV_CAP2_TPH_COMPLETER_SUPPORT</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP2_TPH_COMPLETER_SUPPORT">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEV_CAP_EXT_TAG_SUPPORTED</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP_EXT_TAG_SUPPORTED">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DEV_CAP_MAX_PAYLOAD_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP_MAX_PAYLOAD_SIZE">0b001</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DPA_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DPA_CAP_NEXTPTR">0x300</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION0</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION0">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION1</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION1">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION2</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION2">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION3</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION3">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION4</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION4">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION5</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION5">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION6</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION6">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION7</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DPA_CAP_SUB_STATE_POWER_ALLOCATION7">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_DSN_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DSN_CAP_NEXTPTR">0x300</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_EXPANSION_ROM_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_EXPANSION_ROM_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_EXPANSION_ROM_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_EXPANSION_ROM_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_INTERRUPT_PIN</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_INTERRUPT_PIN">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_LINK_CAP_ASPM_SUPPORT</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_LINK_CAP_ASPM_SUPPORT">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_LINK_STATUS_SLOT_CLOCK_CONFIG</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_LINK_STATUS_SLOT_CLOCK_CONFIG">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_LTR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_LTR_CAP_NEXTPTR">0x300</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_MSIX_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_MSIX_CAP_NEXTPTR">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_MSIX_CAP_PBA_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_MSIX_CAP_PBA_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_MSIX_CAP_PBA_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_MSIX_CAP_PBA_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_MSIX_CAP_TABLE_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_MSIX_CAP_TABLE_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_MSIX_CAP_TABLE_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_MSIX_CAP_TABLE_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_MSIX_CAP_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_MSIX_CAP_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_MSI_CAP_MULTIMSGCAP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_MSI_CAP_MULTIMSGCAP">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_MSI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_MSI_CAP_NEXTPTR">0xC0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_PB_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_PB_CAP_NEXTPTR">0x274</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_PM_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_PM_CAP_NEXTPTR">0x90</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_PM_CAP_PMESUPPORT_D0</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_PM_CAP_PMESUPPORT_D0">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_PM_CAP_PMESUPPORT_D1</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_PM_CAP_PMESUPPORT_D1">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_PM_CAP_PMESUPPORT_D3HOT</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_PM_CAP_PMESUPPORT_D3HOT">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_PM_CAP_SUPP_D1_STATE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_PM_CAP_SUPP_D1_STATE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_RBAR_CAP_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_RBAR_CAP_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_RBAR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_RBAR_CAP_NEXTPTR">0x300</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_RBAR_CAP_SIZE0</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_RBAR_CAP_SIZE0">0x00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_RBAR_CAP_SIZE1</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_RBAR_CAP_SIZE1">0x00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_RBAR_CAP_SIZE2</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_RBAR_CAP_SIZE2">0x00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_REVISION_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_REVISION_ID">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR0_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR0_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR0_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR0_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR1_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR1_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR1_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR1_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR2_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR2_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR2_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR2_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR3_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR3_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR3_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR3_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR4_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR4_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR4_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR4_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR5_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR5_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_BAR5_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_BAR5_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_CAP_INITIAL_VF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_CAP_INITIAL_VF">0x0000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_CAP_NEXTPTR">0x300</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_CAP_TOTAL_VF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_CAP_TOTAL_VF">0x0000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_CAP_VER">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_FIRST_VF_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_FIRST_VF_OFFSET">0x0000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_FUNC_DEP_LINK</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_FUNC_DEP_LINK">0x0000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_SUPPORTED_PAGE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_SUPPORTED_PAGE_SIZE">0x00000553</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SRIOV_VF_DEVICE_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SRIOV_VF_DEVICE_ID">0x0000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SUBSYSTEM_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SUBSYSTEM_ID">0x0007</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_SUBSYSTEM_VENDOR_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_SUBSYSTEM_VENDOR_ID">0x10EE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_TPHR_CAP_DEV_SPECIFIC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_TPHR_CAP_DEV_SPECIFIC_MODE">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_TPHR_CAP_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_TPHR_CAP_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_TPHR_CAP_INT_VEC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_TPHR_CAP_INT_VEC_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_TPHR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_TPHR_CAP_NEXTPTR">0x300</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_TPHR_CAP_ST_MODE_SEL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_TPHR_CAP_ST_MODE_SEL">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_TPHR_CAP_ST_TABLE_LOC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_TPHR_CAP_ST_TABLE_LOC">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_TPHR_CAP_ST_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_TPHR_CAP_ST_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_TPHR_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_TPHR_CAP_VER">0x1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_VC_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_VC_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF0_VENDOR_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_VENDOR_ID">0x10EE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_AER_CAP_ECRC_CHECK_CAPABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_AER_CAP_ECRC_CHECK_CAPABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_AER_CAP_ECRC_GEN_CAPABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_AER_CAP_ECRC_GEN_CAPABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_AER_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_AER_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_ARI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_ARI_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR0_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR0_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR0_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR0_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR1_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR1_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR1_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR1_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR2_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR2_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR2_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR2_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR3_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR3_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR3_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR3_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR4_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR4_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR4_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR4_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR5_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR5_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_BAR5_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR5_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_CAPABILITY_POINTER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_CAPABILITY_POINTER">0x80</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_CLASS_CODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_CLASS_CODE">0x058000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DEVICE_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DEVICE_ID">0x7011</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DEV_CAP_MAX_PAYLOAD_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DEV_CAP_MAX_PAYLOAD_SIZE">0b010</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DPA_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DPA_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION0</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION0">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION1</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION1">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION2</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION2">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION3</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION3">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION4</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION4">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION5</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION5">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION6</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION6">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION7</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DPA_CAP_SUB_STATE_POWER_ALLOCATION7">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_DSN_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DSN_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_EXPANSION_ROM_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_EXPANSION_ROM_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_EXPANSION_ROM_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_EXPANSION_ROM_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_INTERRUPT_PIN</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_INTERRUPT_PIN">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_MSIX_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_MSIX_CAP_NEXTPTR">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_MSIX_CAP_PBA_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_MSIX_CAP_PBA_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_MSIX_CAP_PBA_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_MSIX_CAP_PBA_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_MSIX_CAP_TABLE_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_MSIX_CAP_TABLE_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_MSIX_CAP_TABLE_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_MSIX_CAP_TABLE_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_MSIX_CAP_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_MSIX_CAP_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_MSI_CAP_MULTIMSGCAP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_MSI_CAP_MULTIMSGCAP">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_MSI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_MSI_CAP_NEXTPTR">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_PB_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_PB_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_PM_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_PM_CAP_NEXTPTR">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_RBAR_CAP_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_RBAR_CAP_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_RBAR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_RBAR_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_RBAR_CAP_SIZE0</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_RBAR_CAP_SIZE0">0x00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_RBAR_CAP_SIZE1</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_RBAR_CAP_SIZE1">0x00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_RBAR_CAP_SIZE2</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_RBAR_CAP_SIZE2">0x00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_REVISION_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_REVISION_ID">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR0_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR0_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR0_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR0_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR1_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR1_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR1_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR1_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR2_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR2_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR2_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR2_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR3_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR3_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR3_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR3_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR4_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR4_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR4_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR4_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR5_APERTURE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR5_APERTURE_SIZE">0b00000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_BAR5_CONTROL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_BAR5_CONTROL">0b000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_CAP_INITIAL_VF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_CAP_INITIAL_VF">0x0000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_CAP_TOTAL_VF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_CAP_TOTAL_VF">0x0000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_CAP_VER">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_FIRST_VF_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_FIRST_VF_OFFSET">0x0000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_FUNC_DEP_LINK</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_FUNC_DEP_LINK">0x0001</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_SUPPORTED_PAGE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_SUPPORTED_PAGE_SIZE">0x00000553</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SRIOV_VF_DEVICE_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SRIOV_VF_DEVICE_ID">0x0000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_SUBSYSTEM_ID</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_SUBSYSTEM_ID">0x0007</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_TPHR_CAP_DEV_SPECIFIC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_TPHR_CAP_DEV_SPECIFIC_MODE">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_TPHR_CAP_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_TPHR_CAP_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_TPHR_CAP_INT_VEC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_TPHR_CAP_INT_VEC_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_TPHR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_TPHR_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_TPHR_CAP_ST_MODE_SEL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_TPHR_CAP_ST_MODE_SEL">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_TPHR_CAP_ST_TABLE_LOC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_TPHR_CAP_ST_TABLE_LOC">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_TPHR_CAP_ST_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_TPHR_CAP_ST_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PF1_TPHR_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_TPHR_CAP_VER">0x1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PIPE_SIM</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PIPE_SIM">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PL_LINK_CAP_MAX_LINK_SPEED</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PL_LINK_CAP_MAX_LINK_WIDTH</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PL_LINK_CAP_MAX_LINK_WIDTH">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>PL_UPSTREAM_FACING</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PL_UPSTREAM_FACING">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>POWER_DOWN</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.POWER_DOWN">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>RCV_MSG_IF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.RCV_MSG_IF">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>REF_CLK_FREQ</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.REF_CLK_FREQ">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>SHARED_LOGIC_IN_CORE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SHARED_LOGIC_IN_CORE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>SPARE_WORD1</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SPARE_WORD1">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>SRIOV_CAP_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SRIOV_CAP_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TL_CREDITS_CD</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TL_CREDITS_CD">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TL_CREDITS_CH</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TL_CREDITS_CH">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TL_CREDITS_NPD</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TL_CREDITS_NPD">0x028</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TL_CREDITS_NPH</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TL_CREDITS_NPH">0x20</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TL_CREDITS_PD</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TL_CREDITS_PD">0x198</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TL_CREDITS_PH</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TL_CREDITS_PH">0x20</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TL_EXTENDED_CFG_EXTEND_INTERFACE_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TL_EXTENDED_CFG_EXTEND_INTERFACE_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TL_LEGACY_MODE_ENABLE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TL_LEGACY_MODE_ENABLE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TL_PF_ENABLE_REG</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TL_PF_ENABLE_REG">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TRANSCEIVER_CTRL_STATUS_PORTS</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TRANSCEIVER_CTRL_STATUS_PORTS">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>TX_FC_IF</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TX_FC_IF">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>USER_CLK2_FREQ</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.USER_CLK2_FREQ">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_ARI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_ARI_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_CAPABILITY_POINTER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_CAPABILITY_POINTER">0x80</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_MSIX_CAP_PBA_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_MSIX_CAP_PBA_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_MSIX_CAP_PBA_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_MSIX_CAP_PBA_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_MSIX_CAP_TABLE_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_MSIX_CAP_TABLE_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_MSIX_CAP_TABLE_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_MSIX_CAP_TABLE_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_MSIX_CAP_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_MSIX_CAP_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_MSI_CAP_MULTIMSGCAP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_MSI_CAP_MULTIMSGCAP">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_PM_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_PM_CAP_NEXTPTR">&quot;00000000&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_TPHR_CAP_DEV_SPECIFIC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_TPHR_CAP_DEV_SPECIFIC_MODE">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_TPHR_CAP_INT_VEC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_TPHR_CAP_INT_VEC_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_TPHR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_TPHR_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_TPHR_CAP_ST_MODE_SEL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_TPHR_CAP_ST_MODE_SEL">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_TPHR_CAP_ST_TABLE_LOC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_TPHR_CAP_ST_TABLE_LOC">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_TPHR_CAP_ST_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_TPHR_CAP_ST_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF0_TPHR_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF0_TPHR_CAP_VER">0x1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_ARI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_ARI_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_MSIX_CAP_PBA_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_MSIX_CAP_PBA_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_MSIX_CAP_PBA_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_MSIX_CAP_PBA_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_MSIX_CAP_TABLE_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_MSIX_CAP_TABLE_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_MSIX_CAP_TABLE_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_MSIX_CAP_TABLE_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_MSIX_CAP_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_MSIX_CAP_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_MSI_CAP_MULTIMSGCAP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_MSI_CAP_MULTIMSGCAP">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_PM_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_PM_CAP_NEXTPTR">&quot;00000000&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_TPHR_CAP_DEV_SPECIFIC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_TPHR_CAP_DEV_SPECIFIC_MODE">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_TPHR_CAP_INT_VEC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_TPHR_CAP_INT_VEC_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_TPHR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_TPHR_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_TPHR_CAP_ST_MODE_SEL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_TPHR_CAP_ST_MODE_SEL">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_TPHR_CAP_ST_TABLE_LOC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_TPHR_CAP_ST_TABLE_LOC">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_TPHR_CAP_ST_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_TPHR_CAP_ST_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF1_TPHR_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF1_TPHR_CAP_VER">0x1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_ARI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_ARI_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_MSIX_CAP_PBA_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_MSIX_CAP_PBA_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_MSIX_CAP_PBA_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_MSIX_CAP_PBA_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_MSIX_CAP_TABLE_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_MSIX_CAP_TABLE_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_MSIX_CAP_TABLE_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_MSIX_CAP_TABLE_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_MSIX_CAP_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_MSIX_CAP_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_MSI_CAP_MULTIMSGCAP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_MSI_CAP_MULTIMSGCAP">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_PM_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_PM_CAP_NEXTPTR">&quot;00000000&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_TPHR_CAP_DEV_SPECIFIC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_TPHR_CAP_DEV_SPECIFIC_MODE">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_TPHR_CAP_INT_VEC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_TPHR_CAP_INT_VEC_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_TPHR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_TPHR_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_TPHR_CAP_ST_MODE_SEL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_TPHR_CAP_ST_MODE_SEL">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_TPHR_CAP_ST_TABLE_LOC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_TPHR_CAP_ST_TABLE_LOC">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_TPHR_CAP_ST_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_TPHR_CAP_ST_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF2_TPHR_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF2_TPHR_CAP_VER">0x1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_ARI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_ARI_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_MSIX_CAP_PBA_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_MSIX_CAP_PBA_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_MSIX_CAP_PBA_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_MSIX_CAP_PBA_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_MSIX_CAP_TABLE_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_MSIX_CAP_TABLE_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_MSIX_CAP_TABLE_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_MSIX_CAP_TABLE_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_MSIX_CAP_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_MSIX_CAP_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_MSI_CAP_MULTIMSGCAP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_MSI_CAP_MULTIMSGCAP">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_PM_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_PM_CAP_NEXTPTR">&quot;00000000&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_TPHR_CAP_DEV_SPECIFIC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_TPHR_CAP_DEV_SPECIFIC_MODE">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_TPHR_CAP_INT_VEC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_TPHR_CAP_INT_VEC_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_TPHR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_TPHR_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_TPHR_CAP_ST_MODE_SEL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_TPHR_CAP_ST_MODE_SEL">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_TPHR_CAP_ST_TABLE_LOC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_TPHR_CAP_ST_TABLE_LOC">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_TPHR_CAP_ST_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_TPHR_CAP_ST_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF3_TPHR_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF3_TPHR_CAP_VER">0x1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_ARI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_ARI_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_MSIX_CAP_PBA_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_MSIX_CAP_PBA_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_MSIX_CAP_PBA_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_MSIX_CAP_PBA_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_MSIX_CAP_TABLE_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_MSIX_CAP_TABLE_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_MSIX_CAP_TABLE_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_MSIX_CAP_TABLE_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_MSIX_CAP_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_MSIX_CAP_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_MSI_CAP_MULTIMSGCAP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_MSI_CAP_MULTIMSGCAP">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_PM_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_PM_CAP_NEXTPTR">&quot;00000000&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_TPHR_CAP_DEV_SPECIFIC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_TPHR_CAP_DEV_SPECIFIC_MODE">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_TPHR_CAP_INT_VEC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_TPHR_CAP_INT_VEC_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_TPHR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_TPHR_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_TPHR_CAP_ST_MODE_SEL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_TPHR_CAP_ST_MODE_SEL">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_TPHR_CAP_ST_TABLE_LOC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_TPHR_CAP_ST_TABLE_LOC">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_TPHR_CAP_ST_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_TPHR_CAP_ST_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF4_TPHR_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF4_TPHR_CAP_VER">0x1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_ARI_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_ARI_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_MSIX_CAP_PBA_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_MSIX_CAP_PBA_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_MSIX_CAP_PBA_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_MSIX_CAP_PBA_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_MSIX_CAP_TABLE_BIR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_MSIX_CAP_TABLE_BIR">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_MSIX_CAP_TABLE_OFFSET</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_MSIX_CAP_TABLE_OFFSET">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_MSIX_CAP_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_MSIX_CAP_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_MSI_CAP_MULTIMSGCAP</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_MSI_CAP_MULTIMSGCAP">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_PM_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_PM_CAP_NEXTPTR">&quot;00000000&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_TPHR_CAP_DEV_SPECIFIC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_TPHR_CAP_DEV_SPECIFIC_MODE">TRUE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_TPHR_CAP_INT_VEC_MODE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_TPHR_CAP_INT_VEC_MODE">FALSE</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_TPHR_CAP_NEXTPTR</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_TPHR_CAP_NEXTPTR">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_TPHR_CAP_ST_MODE_SEL</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_TPHR_CAP_ST_MODE_SEL">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_TPHR_CAP_ST_TABLE_LOC</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_TPHR_CAP_ST_TABLE_LOC">0x0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_TPHR_CAP_ST_TABLE_SIZE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_TPHR_CAP_ST_TABLE_SIZE">0x000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>VF5_TPHR_CAP_VER</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VF5_TPHR_CAP_VER">0x1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>gen_x0y0_ucf</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.gen_x0y0_ucf">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>gen_x0y1_ucf</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.gen_x0y1_ucf">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>gen_x0y2_ucf</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.gen_x0y2_ucf">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>gen_x0y3_ucf</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.gen_x0y3_ucf">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>pcie_blk_locn</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.pcie_blk_locn">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>silicon_revision</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.silicon_revision">Production</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter>
+        <spirit:name>xlnx_ref_board</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.xlnx_ref_board">1</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>PCIeGen3x4If128.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>PCIeGen3x4If128_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>PCIeGen3x4If128_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>PCIeGen3x4If128_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>PCIeGen3x4If128_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>AXISTEN_IF_RC_STRADDLE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.AXISTEN_IF_RC_STRADDLE">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name">PCIeGen3x4If128</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_AER_CAP_ECRC_CHECK_CAPABLE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_AER_CAP_ECRC_CHECK_CAPABLE">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_AER_CAP_ECRC_GEN_CAPABLE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_AER_CAP_ECRC_GEN_CAPABLE">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_CLASS_CODE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_CLASS_CODE">058000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_DEVICE_ID</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEVICE_ID">7034</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_DEV_CAP2_OBFF_SUPPORT</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEV_CAP2_OBFF_SUPPORT">00_Not_Supported</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_DEV_CAP2_TPH_COMPLETER_SUPPORT</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEV_CAP2_TPH_COMPLETER_SUPPORT">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_INTERRUPT_PIN</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_INTERRUPT_PIN">NONE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_LINK_STATUS_SLOT_CLOCK_CONFIG</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_LINK_STATUS_SLOT_CLOCK_CONFIG">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_MSIX_CAP_PBA_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_MSIX_CAP_PBA_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_MSIX_CAP_PBA_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_MSIX_CAP_PBA_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_MSIX_CAP_TABLE_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_MSIX_CAP_TABLE_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_MSIX_CAP_TABLE_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_MSIX_CAP_TABLE_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_MSIX_CAP_TABLE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_MSIX_CAP_TABLE_SIZE">000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_MSI_CAP_MULTIMSGCAP</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_MSI_CAP_MULTIMSGCAP">1_vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_PM_CAP_PMESUPPORT_D0</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_PM_CAP_PMESUPPORT_D0">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_PM_CAP_PMESUPPORT_D1</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_PM_CAP_PMESUPPORT_D1">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_PM_CAP_PMESUPPORT_D3HOT</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_PM_CAP_PMESUPPORT_D3HOT">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_PM_CAP_SUPP_D1_STATE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_PM_CAP_SUPP_D1_STATE">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_REVISION_ID</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_REVISION_ID">00</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_SRIOV_CAP_INITIAL_VF</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_SRIOV_CAP_INITIAL_VF">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_SRIOV_FIRST_VF_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_SRIOV_FIRST_VF_OFFSET">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_SRIOV_FUNC_DEP_LINK</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_SRIOV_FUNC_DEP_LINK">0000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_SRIOV_SUPPORTED_PAGE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_SRIOV_SUPPORTED_PAGE_SIZE">00000553</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_SRIOV_VF_DEVICE_ID</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_SRIOV_VF_DEVICE_ID">0000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_SUBSYSTEM_ID</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_SUBSYSTEM_ID">0007</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_SUBSYSTEM_VENDOR_ID</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_SUBSYSTEM_VENDOR_ID">10EE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF0_Use_Class_Code_Lookup_Assistant</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_Use_Class_Code_Lookup_Assistant">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_AER_CAP_ECRC_CHECK_CAPABLE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_AER_CAP_ECRC_CHECK_CAPABLE">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_AER_CAP_ECRC_GEN_CAPABLE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_AER_CAP_ECRC_GEN_CAPABLE">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_CLASS_CODE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_CLASS_CODE">058000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_DEVICE_ID</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_DEVICE_ID">7011</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_INTERRUPT_PIN</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_INTERRUPT_PIN">NONE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_MSIX_CAP_PBA_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_MSIX_CAP_PBA_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_MSIX_CAP_PBA_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_MSIX_CAP_PBA_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_MSIX_CAP_TABLE_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_MSIX_CAP_TABLE_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_MSIX_CAP_TABLE_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_MSIX_CAP_TABLE_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_MSIX_CAP_TABLE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_MSIX_CAP_TABLE_SIZE">000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_MSI_CAP_MULTIMSGCAP</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_MSI_CAP_MULTIMSGCAP">1_vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_REVISION_ID</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_REVISION_ID">00</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_SRIOV_CAP_INITIAL_VF</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_SRIOV_CAP_INITIAL_VF">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_SRIOV_CAP_VER</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_SRIOV_CAP_VER">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_SRIOV_FIRST_VF_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_SRIOV_FIRST_VF_OFFSET">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_SRIOV_FUNC_DEP_LINK</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_SRIOV_FUNC_DEP_LINK">0001</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_SRIOV_SUPPORTED_PAGE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_SRIOV_SUPPORTED_PAGE_SIZE">00000553</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_SRIOV_VF_DEVICE_ID</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_SRIOV_VF_DEVICE_ID">0000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_SUBSYSTEM_ID</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_SUBSYSTEM_ID">0007</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PF1_Use_Class_Code_Lookup_Assistant</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF1_Use_Class_Code_Lookup_Assistant">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PL_LINK_CAP_MAX_LINK_SPEED</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED">8.0_GT/s</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PL_LINK_CAP_MAX_LINK_WIDTH</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PL_LINK_CAP_MAX_LINK_WIDTH">X4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>REF_CLK_FREQ</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.REF_CLK_FREQ">100_MHz</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>RESET_BOARD_INTERFACE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RESET_BOARD_INTERFACE">Custom</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SRIOV_CAP_ENABLE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.SRIOV_CAP_ENABLE">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SRIOV_CAP_ENABLE_EXT</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.SRIOV_CAP_ENABLE_EXT">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TL_PF_ENABLE_REG</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TL_PF_ENABLE_REG">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>USE_BOARD_FLOW</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.USE_BOARD_FLOW">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF0_MSIX_CAP_PBA_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF0_MSIX_CAP_PBA_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF0_MSIX_CAP_PBA_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF0_MSIX_CAP_PBA_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF0_MSIX_CAP_TABLE_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF0_MSIX_CAP_TABLE_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF0_MSIX_CAP_TABLE_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF0_MSIX_CAP_TABLE_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF0_MSIX_CAP_TABLE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF0_MSIX_CAP_TABLE_SIZE">000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF0_MSI_CAP_MULTIMSGCAP</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF0_MSI_CAP_MULTIMSGCAP">1_vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF1_MSIX_CAP_PBA_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF1_MSIX_CAP_PBA_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF1_MSIX_CAP_PBA_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF1_MSIX_CAP_PBA_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF1_MSIX_CAP_TABLE_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF1_MSIX_CAP_TABLE_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF1_MSIX_CAP_TABLE_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF1_MSIX_CAP_TABLE_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF1_MSIX_CAP_TABLE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF1_MSIX_CAP_TABLE_SIZE">000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF1_MSI_CAP_MULTIMSGCAP</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF1_MSI_CAP_MULTIMSGCAP">1_vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF2_MSIX_CAP_PBA_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF2_MSIX_CAP_PBA_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF2_MSIX_CAP_PBA_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF2_MSIX_CAP_PBA_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF2_MSIX_CAP_TABLE_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF2_MSIX_CAP_TABLE_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF2_MSIX_CAP_TABLE_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF2_MSIX_CAP_TABLE_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF2_MSIX_CAP_TABLE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF2_MSIX_CAP_TABLE_SIZE">000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF2_MSI_CAP_MULTIMSGCAP</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF2_MSI_CAP_MULTIMSGCAP">1_vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF3_MSIX_CAP_PBA_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF3_MSIX_CAP_PBA_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF3_MSIX_CAP_PBA_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF3_MSIX_CAP_PBA_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF3_MSIX_CAP_TABLE_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF3_MSIX_CAP_TABLE_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF3_MSIX_CAP_TABLE_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF3_MSIX_CAP_TABLE_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF3_MSIX_CAP_TABLE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF3_MSIX_CAP_TABLE_SIZE">000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF3_MSI_CAP_MULTIMSGCAP</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF3_MSI_CAP_MULTIMSGCAP">1_vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF4_MSIX_CAP_PBA_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF4_MSIX_CAP_PBA_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF4_MSIX_CAP_PBA_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF4_MSIX_CAP_PBA_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF4_MSIX_CAP_TABLE_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF4_MSIX_CAP_TABLE_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF4_MSIX_CAP_TABLE_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF4_MSIX_CAP_TABLE_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF4_MSIX_CAP_TABLE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF4_MSIX_CAP_TABLE_SIZE">000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF4_MSI_CAP_MULTIMSGCAP</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF4_MSI_CAP_MULTIMSGCAP">1_vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF5_MSIX_CAP_PBA_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF5_MSIX_CAP_PBA_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF5_MSIX_CAP_PBA_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF5_MSIX_CAP_PBA_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF5_MSIX_CAP_TABLE_BIR</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF5_MSIX_CAP_TABLE_BIR">BAR_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF5_MSIX_CAP_TABLE_OFFSET</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF5_MSIX_CAP_TABLE_OFFSET">00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF5_MSIX_CAP_TABLE_SIZE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF5_MSIX_CAP_TABLE_SIZE">000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VF5_MSI_CAP_MULTIMSGCAP</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.VF5_MSI_CAP_MULTIMSGCAP">1_vector</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>alignment_mode</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.alignment_mode">DWORD_Aligned</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>aspm_support</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.aspm_support">No_ASPM</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>axisten_freq</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.axisten_freq">250</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>axisten_if_enable_client_tag</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.axisten_if_enable_client_tag">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>axisten_if_enable_msg_route</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.axisten_if_enable_msg_route">2FFFF</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>axisten_if_enable_rx_msg_intfc</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.axisten_if_enable_rx_msg_intfc">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>axisten_if_width</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.axisten_if_width">128_bit</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>cfg_ctl_if</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.cfg_ctl_if">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>cfg_ext_if</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.cfg_ext_if">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>cfg_fc_if</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.cfg_fc_if">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>cfg_mgmt_if</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.cfg_mgmt_if">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>cfg_status_if</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.cfg_status_if">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>cfg_tx_msg_if</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.cfg_tx_msg_if">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>device_port_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.device_port_type">PCI_Express_Endpoint_device</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>en_ext_ch_gt_drp</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.en_ext_ch_gt_drp">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>en_ext_clk</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.en_ext_clk">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>en_ext_gt_common</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.en_ext_gt_common">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>en_ext_pipe_interface</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.en_ext_pipe_interface">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>en_ext_startup</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.en_ext_startup">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>en_msi_per_vec_masking</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.en_msi_per_vec_masking">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>en_pcie_drp</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.en_pcie_drp">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>en_powerdown</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.en_powerdown">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>en_transceiver_status_ports</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.en_transceiver_status_ports">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>ext_pcie_cfg_space_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.ext_pcie_cfg_space_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>extended_tag_field</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.extended_tag_field">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>gen_x0y0</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.gen_x0y0">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>gen_x0y1</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.gen_x0y1">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>gen_x0y2</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.gen_x0y2">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>gen_x0y3</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.gen_x0y3">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>mode_selection</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.mode_selection">Advanced</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pcie_blk_locn</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pcie_blk_locn">X0Y1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>per_func_status_if</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.per_func_status_if">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>perf_level</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.perf_level">Extreme</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>performance</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.performance">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_aer_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_aer_enabled">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_ari_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_ari_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar0_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar0_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar0_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar0_enabled">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar0_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar0_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar0_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar0_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar0_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar0_size">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar0_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar0_type">Memory</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar1_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar1_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar1_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar1_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar1_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar1_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar1_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar1_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar1_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar1_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar1_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar1_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar2_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar2_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar2_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar2_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar2_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar2_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar2_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar2_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar2_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar2_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar2_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar2_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar3_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar3_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar3_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar3_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar3_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar3_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar3_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar3_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar3_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar3_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar3_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar3_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar4_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar4_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar4_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar4_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar4_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar4_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar4_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar4_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar4_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar4_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar4_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar4_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar5_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar5_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar5_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar5_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar5_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar5_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar5_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar5_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_bar5_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar5_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_base_class_menu</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_base_class_menu">Simple_communication_controllers</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_class_code_base</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_class_code_base">05</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_class_code_interface</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_class_code_interface">00</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_class_code_sub</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_class_code_sub">80</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_dev_cap_max_payload</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_dev_cap_max_payload">256_bytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_dpa_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_dpa_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_dsn_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_dsn_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_expansion_rom_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_expansion_rom_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_expansion_rom_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_expansion_rom_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_expansion_rom_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_expansion_rom_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_ltr_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_ltr_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_msi_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_msi_enabled">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_msix_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_msix_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_pb_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_pb_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_rbar_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_rbar_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar0_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar0_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar0_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar0_enabled">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar0_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar0_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar0_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar0_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar0_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar0_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar0_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar0_type">Memory</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar1_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar1_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar1_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar1_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar1_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar1_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar1_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar1_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar1_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar1_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar1_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar1_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar2_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar2_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar2_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar2_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar2_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar2_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar2_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar2_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar2_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar2_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar2_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar2_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar3_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar3_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar3_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar3_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar3_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar3_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar3_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar3_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar3_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar3_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar3_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar3_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar4_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar4_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar4_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar4_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar4_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar4_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar4_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar4_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar4_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar4_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar4_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar4_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar5_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar5_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar5_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar5_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar5_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar5_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar5_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar5_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_bar5_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_bar5_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sriov_cap_ver</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sriov_cap_ver">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_sub_class_interface_menu</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_sub_class_interface_menu">Generic_XT_compatible_serial_controller</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_tphr_enable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_tphr_enable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf0_vc_cap_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_vc_cap_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_aer_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_aer_enabled">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_ari_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_ari_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar0_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar0_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar0_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar0_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar0_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar0_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar0_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar0_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar0_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar0_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar0_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar0_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar1_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar1_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar1_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar1_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar1_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar1_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar1_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar1_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar1_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar1_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar1_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar1_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar2_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar2_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar2_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar2_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar2_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar2_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar2_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar2_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar2_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar2_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar2_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar2_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar3_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar3_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar3_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar3_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar3_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar3_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar3_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar3_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar3_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar3_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar3_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar3_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar4_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar4_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar4_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar4_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar4_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar4_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar4_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar4_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar4_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar4_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar4_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar4_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar5_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar5_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar5_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar5_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar5_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar5_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar5_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar5_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_bar5_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar5_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_base_class_menu</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_base_class_menu">Simple_communication_controllers</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_class_code_base</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_class_code_base">05</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_class_code_interface</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_class_code_interface">00</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_class_code_sub</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_class_code_sub">80</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_dev_cap_max_payload</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_dev_cap_max_payload">512_bytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_dpa_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_dpa_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_dsn_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_dsn_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_expansion_rom_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_expansion_rom_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_expansion_rom_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_expansion_rom_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_expansion_rom_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_expansion_rom_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_msi_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_msi_enabled">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_msix_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_msix_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_pb_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_pb_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_rbar_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_rbar_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar0_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar0_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar0_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar0_enabled">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar0_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar0_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar0_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar0_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar0_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar0_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar0_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar0_type">Memory</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar1_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar1_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar1_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar1_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar1_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar1_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar1_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar1_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar1_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar1_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar1_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar1_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar2_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar2_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar2_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar2_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar2_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar2_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar2_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar2_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar2_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar2_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar2_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar2_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar3_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar3_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar3_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar3_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar3_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar3_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar3_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar3_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar3_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar3_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar3_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar3_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar4_64bit</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar4_64bit">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar4_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar4_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar4_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar4_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar4_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar4_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar4_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar4_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar4_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar4_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar5_enabled</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar5_enabled">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar5_prefetchable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar5_prefetchable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar5_scale</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar5_scale">Kilobytes</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar5_size</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar5_size">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sriov_bar5_type</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sriov_bar5_type">N/A</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_sub_class_interface_menu</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_sub_class_interface_menu">Generic_XT_compatible_serial_controller</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pf1_tphr_enable</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_tphr_enable">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pipe_mode_sim</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pipe_mode_sim">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>pipe_sim</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pipe_sim">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>rcv_msg_if</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.rcv_msg_if">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>shared_logic_in_core</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.shared_logic_in_core">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>silicon_rev</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.silicon_rev">Production</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>tandem_mode</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.tandem_mode">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>tl_pf0_enable_reg</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.tl_pf0_enable_reg">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>tx_fc_if</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.tx_fc_if">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>vendor_id</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.vendor_id">10EE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>xlnx_ref_board</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.xlnx_ref_board">VC709</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions/>
+  </spirit:vendorExtensions>
+</spirit:component>

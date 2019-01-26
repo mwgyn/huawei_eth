@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jan 15 12:16:38 2019
+# Process ID: 23505
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj
+# Command line: vivado ./VC709_Gen3x4If128.xpr
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/vivado.log
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -part xcvu9p-flga2104-1-e ./VC709_Gen3x4If128.xpr
+INFO: [Project 1-313] Project file moved from '/home/drichmond/Research/repositories/git/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-573] Overriding 'synth_1' run's part, 'xc7vx690tffg1761-2', with new part: 'xcvu9p-flga2104-1-e'.
+INFO: [Project 1-573] Overriding 'PCIeGen3x4If128_synth_1' run's part, 'xc7vx690tffg1761-2', with new part: 'xcvu9p-flga2104-1-e'.
+WARNING: [Project 1-509] GeneratedRun file for 'PCIeGen3x4If128_synth_1' not found
+INFO: [Project 1-573] Overriding 'impl_1' run's part, 'xc7vx690tffg1761-2', with new part: 'xcvu9p-flga2104-1-e'.
+INFO: [Project 1-573] Overriding 'PCIeGen3x4If128_impl_1' run's part, 'xc7vx690tffg1761-2', with new part: 'xcvu9p-flga2104-1-e'.
+INFO: [Project 1-563] Overriding project part, 'xc7vx690tffg1761-2', with new part: 'xcvu9p-flga2104-1-e'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory '/home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.ip_user_files', nor could it be found using path '/home/drichmond/Research/repositories/git/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.ip_user_files'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for xilinx.com:vc709:part0:1.5. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2.op2258646/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'PCIeGen3x4If128' is locked:
+* IP definition 'Virtex-7 FPGA Gen3 Integrated Block for PCI Express (4.1)' for IP 'PCIeGen3x4If128' (customized with software release 2015.4) has a newer minor version in the IP Catalog.
+* Current project part 'xcvu9p-flga2104-1-e' and the part 'xc7vx690tffg1761-2' used to customize the IP 'PCIeGen3x4If128' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 6184.777 ; gain = 85.809 ; free physical = 28277 ; free virtual = 66054
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+launch_runs synth_1 -jobs 8
+WARNING: [Project 1-576] IP '/home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/ip/PCIeGen3x4If128.xci' in run PCIeGen3x4If128_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP '/home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/ip/PCIeGen3x4If128.xci' in run PCIeGen3x4If128_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Tue Jan 15 12:28:40 2019] Launched PCIeGen3x4If128_synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/PCIeGen3x4If128_synth_1/runme.log
+[Tue Jan 15 12:28:40 2019] Launched synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/synth_1/runme.log
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property board_part xilinx.com:vcu118:part0:2.0 [current_project]
+WARNING: [Project 1-153] The current project device 'xcvu9p-flga2104-1-e' does not match with the device on the 'XILINX.COM:VCU118:PART0:2.0' board part. A device change to match the device on 'XILINX.COM:VCU118:PART0:2.0' board part is being done. Please upgrade the IP in the project via the upgrade_ip command or by selecting Reports => Reports IP Status.
+INFO: [Project 1-152] Project part set to virtexuplus (xcvu9p-flga2104-2l-e)
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property part xcvu9p-flgb2104-2-i [current_project]
+INFO: [Project 1-154] The current project board 'xilinx.com:vcu118:part0:2.0' is reset to empty (None). Use 'Project Settings' part selector (GUI) or issue set_property Tcl Command to set the board again.
+WARNING: [IP_Flow 19-2162] IP 'PCIeGen3x4If128' is locked:
+* IP definition 'Virtex-7 FPGA Gen3 Integrated Block for PCI Express (4.1)' for IP 'PCIeGen3x4If128' (customized with software release 2015.4) has a newer minor version in the IP Catalog.
+* Current project part 'xcvu9p-flgb2104-2-i' and the part 'xc7vx690tffg1761-2' used to customize the IP 'PCIeGen3x4If128' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status 
+reset_run PCIeGen3x4If128_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [Project 1-576] IP '/home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/ip/PCIeGen3x4If128.xci' in run PCIeGen3x4If128_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP '/home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/ip/PCIeGen3x4If128.xci' in run PCIeGen3x4If128_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Tue Jan 15 12:43:44 2019] Launched PCIeGen3x4If128_synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/PCIeGen3x4If128_synth_1/runme.log
+[Tue Jan 15 12:43:44 2019] Launched synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 15 12:47:04 2019...

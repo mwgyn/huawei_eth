@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 09:51:19 2019
+# Process ID: 15733
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj
+# Command line: vivado ./Huawei_Gen4.xpr
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.log
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ./Huawei_Gen4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2.op2258646/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 6499.770 ; gain = 460.055 ; free physical = 5414 ; free virtual = 42571
+update_compile_order -fileset sources_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 17 09:56:15 2019...

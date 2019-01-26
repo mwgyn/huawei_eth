@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="PCIeGen3x4If128_synth_1" LaunchPart="xcvu9p-flgb2104-2-i" LaunchTime="1547556224">
+  <File Type="REPORTS-TCL" Name="PCIeGen3x4If128_reports.tcl"/>
+  <File Type="PA-TCL" Name="PCIeGen3x4If128.tcl"/>
+  <File Type="RDS-DCP" Name="PCIeGen3x4If128.dcp"/>
+  <File Type="RDS-RDS" Name="PCIeGen3x4If128.vds"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/PCIeGen3x4If128">
+    <File Path="$PPRDIR/../ip/PCIeGen3x4If128.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="PCIeGen3x4If128"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/PCIeGen3x4If128">
+    <File Path="$PPRDIR/../ip/PCIeGen3x4If128.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="PCIeGen3x4If128"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

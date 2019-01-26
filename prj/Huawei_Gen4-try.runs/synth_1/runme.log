@@ -1,0 +1,228 @@
+
+*** Running vivado
+    with args -log VC709_Gen3x4If128.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VC709_Gen3x4If128.tcl
+
+
+****** Vivado v2018.2_AR71275_op (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source VC709_Gen3x4If128.tcl -notrace
+Command: synth_design -top VC709_Gen3x4If128 -part xcvu9p-flgb2104-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24855 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [/home/centos/daniel/riffa/fpga/riffa_hdl/tlp.vh:228]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [/home/centos/daniel/riffa/fpga/riffa_hdl/tlp.vh:248]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1689.168 ; gain = 0.000 ; free physical = 1503 ; free virtual = 38142
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VC709_Gen3x4If128' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:47]
+	Parameter C_NUM_CHNL bound to: 1 - type: integer 
+	Parameter C_NUM_LANES bound to: 4 - type: integer 
+	Parameter C_PCI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_MAX_PAYLOAD_BYTES bound to: 256 - type: integer 
+	Parameter C_LOG_NUM_TAGS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'chnl_tester' [/home/centos/daniel/riffa/fpga/riffa_hdl/chnl_tester.v:50]
+	Parameter C_PCI_DATA_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'chnl_tester' (1#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/chnl_tester.v:50]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/Xilinx/Vivado/2018.2.op2258646/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (2#1) [/opt/Xilinx/Vivado/2018.2.op2258646/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [/opt/Xilinx/Vivado/2018.2.op2258646/scripts/rt/data/unisim_comp.v:19625]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (3#1) [/opt/Xilinx/Vivado/2018.2.op2258646/scripts/rt/data/unisim_comp.v:19625]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [/opt/Xilinx/Vivado/2018.2.op2258646/scripts/rt/data/unisim_comp.v:27275]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (4#1) [/opt/Xilinx/Vivado/2018.2.op2258646/scripts/rt/data/unisim_comp.v:27275]
+INFO: [Synth 8-6157] synthesizing module 'pcie4_uscale_plus_0' [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/synth_1/.Xil/Vivado-24760-ip-172-31-22-253.ap-southeast-1.compute.internal/realtime/pcie4_uscale_plus_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4_uscale_plus_0' (5#1) [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/synth_1/.Xil/Vivado-24760-ip-172-31-22-253.ap-southeast-1.compute.internal/realtime/pcie4_uscale_plus_0_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'pci_exp_txn' does not match port width (1) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:254]
+WARNING: [Synth 8-689] width (4) of port connection 'pci_exp_txp' does not match port width (1) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:255]
+WARNING: [Synth 8-689] width (4) of port connection 'pci_exp_rxn' does not match port width (1) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:256]
+WARNING: [Synth 8-689] width (4) of port connection 'pci_exp_rxp' does not match port width (1) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:257]
+WARNING: [Synth 8-689] width (128) of port connection 's_axis_rq_tdata' does not match port width (64) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:268]
+WARNING: [Synth 8-689] width (60) of port connection 's_axis_rq_tuser' does not match port width (62) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:269]
+WARNING: [Synth 8-689] width (4) of port connection 's_axis_rq_tkeep' does not match port width (2) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:270]
+WARNING: [Synth 8-689] width (1) of port connection 's_axis_rq_tready' does not match port width (4) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:271]
+WARNING: [Synth 8-689] width (128) of port connection 'm_axis_rc_tdata' does not match port width (64) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:274]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axis_rc_tkeep' does not match port width (2) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:277]
+WARNING: [Synth 8-689] width (22) of port connection 'm_axis_rc_tready' does not match port width (1) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:279]
+WARNING: [Synth 8-689] width (128) of port connection 'm_axis_cq_tdata' does not match port width (64) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:281]
+WARNING: [Synth 8-689] width (85) of port connection 'm_axis_cq_tuser' does not match port width (88) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:282]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axis_cq_tkeep' does not match port width (2) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:284]
+WARNING: [Synth 8-689] width (22) of port connection 'm_axis_cq_tready' does not match port width (1) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:286]
+WARNING: [Synth 8-689] width (128) of port connection 's_axis_cc_tdata' does not match port width (64) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:288]
+WARNING: [Synth 8-689] width (4) of port connection 's_axis_cc_tkeep' does not match port width (2) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:291]
+WARNING: [Synth 8-689] width (1) of port connection 's_axis_cc_tready' does not match port width (4) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:293]
+WARNING: [Synth 8-689] width (4) of port connection 'pcie_rq_seq_num0' does not match port width (6) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:298]
+WARNING: [Synth 8-689] width (6) of port connection 'pcie_rq_tag0' does not match port width (8) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:300]
+WARNING: [Synth 8-689] width (1) of port connection 'pcie_cq_np_req' does not match port width (2) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:302]
+WARNING: [Synth 8-689] width (1) of port connection 'cfg_phy_link_status' does not match port width (2) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:305]
+WARNING: [Synth 8-689] width (4) of port connection 'cfg_negotiated_width' does not match port width (3) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:306]
+WARNING: [Synth 8-689] width (3) of port connection 'cfg_current_speed' does not match port width (2) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:307]
+WARNING: [Synth 8-689] width (3) of port connection 'cfg_max_payload' does not match port width (2) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:308]
+WARNING: [Synth 8-689] width (8) of port connection 'cfg_function_status' does not match port width (16) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:310]
+WARNING: [Synth 8-689] width (6) of port connection 'cfg_function_power_state' does not match port width (12) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:311]
+WARNING: [Synth 8-689] width (12) of port connection 'cfg_vf_status' does not match port width (504) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:312]
+WARNING: [Synth 8-689] width (18) of port connection 'cfg_vf_power_state' does not match port width (756) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:313]
+WARNING: [Synth 8-689] width (2) of port connection 'cfg_rcb_status' does not match port width (4) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:321]
+WARNING: [Synth 8-689] width (2) of port connection 'cfg_tph_requester_enable' does not match port width (4) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:325]
+WARNING: [Synth 8-689] width (6) of port connection 'cfg_tph_st_mode' does not match port width (12) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:326]
+WARNING: [Synth 8-689] width (6) of port connection 'cfg_vf_tph_requester_enable' does not match port width (252) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:327]
+WARNING: [Synth 8-689] width (18) of port connection 'cfg_vf_tph_st_mode' does not match port width (756) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:328]
+WARNING: [Synth 8-689] width (2) of port connection 'cfg_interrupt_pending' does not match port width (4) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:341]
+WARNING: [Synth 8-689] width (2) of port connection 'cfg_interrupt_msi_enable' does not match port width (4) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:343]
+WARNING: [Synth 8-689] width (6) of port connection 'cfg_interrupt_msi_mmenable' does not match port width (12) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:345]
+WARNING: [Synth 8-689] width (4) of port connection 'cfg_interrupt_msi_select' does not match port width (2) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:348]
+WARNING: [Synth 8-689] width (64) of port connection 'cfg_interrupt_msi_pending_status' does not match port width (32) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:350]
+WARNING: [Synth 8-689] width (9) of port connection 'cfg_interrupt_msi_tph_st_tag' does not match port width (8) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:356]
+WARNING: [Synth 8-689] width (3) of port connection 'cfg_interrupt_msi_function_number' does not match port width (8) of module 'pcie4_uscale_plus_0' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:357]
+WARNING: [Synth 8-350] instance 'pcie4_7x_0_i' of module 'pcie4_uscale_plus_0' requires 137 connections, but only 85 given [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:250]
+INFO: [Synth 8-6157] synthesizing module 'riffa_wrapper_vc709' [/home/centos/daniel/riffa/fpga/xilinx/huawei/riffa_wrapper_vc709.v:47]
+	Parameter C_NUM_CHNL bound to: 1 - type: integer 
+	Parameter C_PCI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_MAX_PAYLOAD_BYTES bound to: 256 - type: integer 
+	Parameter C_LOG_NUM_TAGS bound to: 5 - type: integer 
+	Parameter C_FPGA_ID bound to: V709 - type: string 
+	Parameter C_FPGA_NAME bound to: REGT - type: string 
+	Parameter C_MAX_READ_REQ_BYTES bound to: 512 - type: integer 
+	Parameter C_VENDOR bound to: ULTRASCALE - type: string 
+	Parameter C_KEEP_WIDTH bound to: 4 - type: integer 
+	Parameter C_PIPELINE_OUTPUT bound to: 1 - type: integer 
+	Parameter C_PIPELINE_INPUT bound to: 1 - type: integer 
+	Parameter C_DEPTH_PACKETS bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'engine_layer' [/home/centos/daniel/riffa/fpga/riffa_hdl/engine_layer.v:45]
+	Parameter C_PCI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_LOG_NUM_TAGS bound to: 5 - type: integer 
+	Parameter C_PIPELINE_INPUT bound to: 1 - type: integer 
+	Parameter C_PIPELINE_OUTPUT bound to: 1 - type: integer 
+	Parameter C_MAX_PAYLOAD_DWORDS bound to: 64 - type: integer 
+	Parameter C_VENDOR bound to: ULTRASCALE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'rx_engine_ultrascale' [/home/centos/daniel/riffa/fpga/riffa_hdl/rx_engine_ultrascale.v:48]
+	Parameter C_PCI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_RX_PIPELINE_DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rxc_engine_ultrascale' [/home/centos/daniel/riffa/fpga/riffa_hdl/rxc_engine_ultrascale.v:47]
+	Parameter C_PCI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_RX_PIPELINE_DEPTH bound to: 3 - type: integer 
+	Parameter C_RX_META_STAGES bound to: 0 - type: integer 
+	Parameter C_RX_DATA_STAGES bound to: 1 - type: integer 
+	Parameter C_RX_BE_W bound to: 8 - type: integer 
+	Parameter C_RX_INPUT_STAGES bound to: 0 - type: integer 
+	Parameter C_RX_OUTPUT_STAGES bound to: 2 - type: integer 
+	Parameter C_RX_COMPUTATION_STAGES bound to: 1 - type: integer 
+	Parameter C_TOTAL_STAGES bound to: 3 - type: integer 
+	Parameter C_RX_METADW0_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_METADW1_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_METADW2_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_PAYLOAD_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_BE_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_METADW0_INDEX bound to: 0 - type: integer 
+	Parameter C_RX_METADW1_INDEX bound to: 32 - type: integer 
+	Parameter C_RX_METADW2_INDEX bound to: 64 - type: integer 
+	Parameter C_RX_BE_INDEX bound to: 0 - type: integer 
+	Parameter C_OFFSET_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'register' [/home/centos/daniel/riffa/fpga/riffa_hdl/register.v:43]
+	Parameter C_WIDTH bound to: 4 - type: integer 
+	Parameter C_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (6#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/register.v:43]
+INFO: [Synth 8-6157] synthesizing module 'pipeline' [/home/centos/daniel/riffa/fpga/riffa_hdl/pipeline.v:45]
+	Parameter C_DEPTH bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 4 - type: integer 
+	Parameter C_USE_MEMORY bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'reg_pipeline' [/home/centos/daniel/riffa/fpga/riffa_hdl/pipeline.v:214]
+	Parameter C_DEPTH bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_pipeline' (7#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/pipeline.v:214]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline' (8#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/pipeline.v:45]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized0' [/home/centos/daniel/riffa/fpga/riffa_hdl/register.v:43]
+	Parameter C_WIDTH bound to: 1 - type: integer 
+	Parameter C_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized0' (8#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/register.v:43]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized1' [/home/centos/daniel/riffa/fpga/riffa_hdl/register.v:43]
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized1' (8#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/register.v:43]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized2' [/home/centos/daniel/riffa/fpga/riffa_hdl/register.v:43]
+	Parameter C_WIDTH bound to: 33 - type: integer 
+	Parameter C_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized2' (8#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/register.v:43]
+INFO: [Synth 8-6157] synthesizing module 'shiftreg' [/home/centos/daniel/riffa/fpga/riffa_hdl/shiftreg.v:49]
+	Parameter C_DEPTH bound to: 3 - type: integer 
+	Parameter C_WIDTH bound to: 128 - type: integer 
+	Parameter C_VALUE bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element gen_sr_registers[3].rDataShift_reg[3] was removed.  [/home/centos/daniel/riffa/fpga/riffa_hdl/shiftreg.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'shiftreg' (9#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/shiftreg.v:49]
+INFO: [Synth 8-6157] synthesizing module 'shiftreg__parameterized0' [/home/centos/daniel/riffa/fpga/riffa_hdl/shiftreg.v:49]
+	Parameter C_DEPTH bound to: 3 - type: integer 
+	Parameter C_WIDTH bound to: 1'b1 
+	Parameter C_VALUE bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element gen_sr_registers[3].rDataShift_reg[3] was removed.  [/home/centos/daniel/riffa/fpga/riffa_hdl/shiftreg.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'shiftreg__parameterized0' (9#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/shiftreg.v:49]
+INFO: [Synth 8-6157] synthesizing module 'shiftreg__parameterized1' [/home/centos/daniel/riffa/fpga/riffa_hdl/shiftreg.v:49]
+	Parameter C_DEPTH bound to: 3 - type: integer 
+	Parameter C_WIDTH bound to: 1 - type: integer 
+	Parameter C_VALUE bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element gen_sr_registers[3].rDataShift_reg[3] was removed.  [/home/centos/daniel/riffa/fpga/riffa_hdl/shiftreg.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'shiftreg__parameterized1' (9#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/shiftreg.v:49]
+INFO: [Synth 8-6157] synthesizing module 'offset_to_mask' [/home/centos/daniel/riffa/fpga/riffa_hdl/offset_to_mask.v:36]
+	Parameter C_MASK_SWAP bound to: 0 - type: integer 
+	Parameter C_MASK_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'offset_to_mask' (10#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/offset_to_mask.v:36]
+INFO: [Synth 8-6157] synthesizing module 'pipeline__parameterized0' [/home/centos/daniel/riffa/fpga/riffa_hdl/pipeline.v:45]
+	Parameter C_DEPTH bound to: 2 - type: integer 
+	Parameter C_WIDTH bound to: 105 - type: integer 
+	Parameter C_USE_MEMORY bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'reg_pipeline__parameterized0' [/home/centos/daniel/riffa/fpga/riffa_hdl/pipeline.v:214]
+	Parameter C_DEPTH bound to: 2 - type: integer 
+	Parameter C_WIDTH bound to: 105 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_pipeline__parameterized0' (10#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/pipeline.v:214]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline__parameterized0' (10#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/pipeline.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'rxc_engine_ultrascale' (11#1) [/home/centos/daniel/riffa/fpga/riffa_hdl/rxc_engine_ultrascale.v:47]
+INFO: [Synth 8-6157] synthesizing module 'rxr_engine_ultrascale' [/home/centos/daniel/riffa/fpga/riffa_hdl/rxr_engine_ultrascale.v:47]
+	Parameter C_PCI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_RX_PIPELINE_DEPTH bound to: 3 - type: integer 
+	Parameter C_RX_BE_W bound to: 8 - type: integer 
+	Parameter C_RX_INPUT_STAGES bound to: 0 - type: integer 
+	Parameter C_RX_OUTPUT_STAGES bound to: 2 - type: integer 
+	Parameter C_RX_COMPUTATION_STAGES bound to: 1 - type: integer 
+	Parameter C_TOTAL_STAGES bound to: 3 - type: integer 
+	Parameter C_RX_ADDRDW0_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_ADDRDW1_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_METADW0_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_METADW1_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_PAYLOAD_CYCLE bound to: 1 - type: integer 
+	Parameter C_RX_BE_CYCLE bound to: 0 - type: integer 
+	Parameter C_RX_ADDRDW0_INDEX bound to: 0 - type: integer 
+	Parameter C_RX_ADDRDW1_INDEX bound to: 32 - type: integer 
+	Parameter C_RX_METADW0_INDEX bound to: 64 - type: integer 
+	Parameter C_RX_METADW1_INDEX bound to: 96 - type: integer 
+	Parameter C_RX_BE_INDEX bound to: 0 - type: integer 
+	Parameter C_OFFSET_WIDTH bound to: 2 - type: integer 
+ERROR: [Synth 8-660] unable to resolve 'upkt_to_trellis_type' [/home/centos/daniel/riffa/fpga/riffa_hdl/rxr_engine_ultrascale.v:196]
+ERROR: [Synth 8-6156] failed synthesizing module 'rxr_engine_ultrascale' [/home/centos/daniel/riffa/fpga/riffa_hdl/rxr_engine_ultrascale.v:47]
+ERROR: [Synth 8-6156] failed synthesizing module 'rx_engine_ultrascale' [/home/centos/daniel/riffa/fpga/riffa_hdl/rx_engine_ultrascale.v:48]
+ERROR: [Synth 8-6156] failed synthesizing module 'engine_layer' [/home/centos/daniel/riffa/fpga/riffa_hdl/engine_layer.v:45]
+ERROR: [Synth 8-6156] failed synthesizing module 'riffa_wrapper_vc709' [/home/centos/daniel/riffa/fpga/xilinx/huawei/riffa_wrapper_vc709.v:47]
+ERROR: [Synth 8-6156] failed synthesizing module 'VC709_Gen3x4If128' [/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1689.168 ; gain = 0.000 ; free physical = 1522 ; free virtual = 38161
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 47 Warnings, 0 Critical Warnings and 7 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 17 06:57:40 2019...

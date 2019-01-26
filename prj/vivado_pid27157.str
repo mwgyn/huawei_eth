@@ -1,0 +1,2235 @@
+/*
+
+Xilinx Vivado v2018.2_AR71275_op (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:02:38 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 27157
+License: Customer
+
+Current time: 	Thu Jan 17 00:49:13 UTC 2019
+Time zone: 	Coordinated Universal Time (UTC)
+
+OS: CentOS Linux release 7.6.1810 (Core)
+OS Version: 3.10.0-957.1.3.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 2
+
+Display: :1
+Screen size: 1890x1050
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 98 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/Vivado/2018.2.op2258646/tps/lnx64/jre
+Java executable location: 	/opt/Xilinx/Vivado/2018.2.op2258646/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	centos
+User home directory: /home/centos
+User working directory: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2018.2.op2258646
+RDI_DATADIR: /opt/Xilinx/Vivado/2018.2.op2258646/patches/AR71275/vivado/data:/opt/Xilinx/Vivado/2018.2.op2258646/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2018.2.op2258646/bin
+
+Vivado preferences file location: /home/centos/.Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: /home/centos/.Xilinx/Vivado/2018.2/
+Vivado layouts directory: /home/centos/.Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2018.2.op2258646/lib/classes/planAhead.jar
+Vivado log file location: 	/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.log
+Vivado journal file location: 	/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-27157-ip-172-31-22-253.ap-southeast-1.compute.internal
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2018.2.op2258646
+XILINX_SDK: /opt/Xilinx/SDK/2018.2.op2258646
+XILINX_SDX: /opt/Xilinx/SDx/2018.2.op2258646
+XILINX_VIVADO: /opt/Xilinx/Vivado/2018.2.op2258646
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2018.2.op2258646
+
+
+GUI allocated memory:	187 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,878 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: ./Huawei_Gen4.xpr. Version: Vivado v2018.2_AR71275_op 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 54 MB (+54649kb) [00:00:07]
+// [Engine Memory]: 4,876 MB (+4961200kb) [00:00:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,884 MB. GUI used memory: 35 MB. Current time: 1/17/19 12:49:16 AM UTC
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 5,316 MB (+205844kb) [00:00:22]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 58 MB (+1021kb) [00:00:24]
+// Tcl Message: open_project ./Huawei_Gen4.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2.op2258646/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 6493.477 ; gain = 467.191 ; free physical = 4023 ; free virtual = 41743 
+// Project name: Huawei_Gen4; location: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj; part: xcvu9p-flgb2104-2-i
+dismissDialog("Open Project"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,339 MB. GUI used memory: 39 MB. Current time: 1/17/19 12:49:31 AM UTC
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 63 MB (+2101kb) [00:00:30]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 41 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (VC709_Gen3x4If128.v)]", 2); // B (D, ck)
+// [GUI Memory]: 66 MB (+30kb) [00:01:36]
+// [GUI Memory]: 70 MB (+150kb) [00:06:45]
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (VC709_Gen3x4If128.v) elapsed time: 0.2s
+// Elapsed time: 416 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (VC709_Gen3x4If128.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (VC709_Gen3x4If128.v)]", 2, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 13 seconds
+setFileChooser("/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v");
+// 'dH' command handler elapsed time: 13 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v -to_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/VC709_Gen3x4If128.v -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/VC709_Gen3x4If128.v' with file '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v'. 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,399 MB. GUI used memory: 42 MB. Current time: 1/17/19 12:57:31 AM UTC
+// [GUI Memory]: 75 MB (+1842kb) [00:08:30]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v)]", 2); // B (D, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 79 MB (+252kb) [00:12:48]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 269 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128 (PCIeGen3x4If128.xci)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128 (PCIeGen3x4If128.xci)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128 (PCIeGen3x4If128.xci)]", 6, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128 (PCIeGen3x4If128.xci)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128 (PCIeGen3x4If128.xci)]", 6, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: set_property is_enabled false [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/PCIeGen3x4If128.xci] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,430 MB. GUI used memory: 42 MB. Current time: 1/17/19 1:02:21 AM UTC
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci' is already up-to-date 
+// Tcl Message: [Thu Jan 17 01:02:23 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 86 MB (+3306kb) [00:13:40]
+// TclEventType: RUN_FAILED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 640ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 223 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-660] unable to resolve 'clog2s' [/home/centos/daniel/riffa/fpga/xilinx/huawei/riffa_wrapper_vc709.v:164]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/daniel/riffa/fpga/xilinx/huawei/riffa_wrapper_vc709.v;-;;-;16;-;line;-;164;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("riffa_wrapper_vc709.v", 89, 158); // ce (w, ck)
+selectCodeEditor("riffa_wrapper_vc709.v", 89, 158, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 91 MB (+677kb) [00:19:28]
+// Elapsed time: 387 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, widths.vh]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, riffa.vh]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, riffa.vh]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, riffa.vh]", 3, false); // B (D, ck)
+// Elapsed time: 193 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, functions.vh]", 4, false); // B (D, ck)
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, functions.vh]", 4, false); // B (D, ck)
+// Elapsed time: 27 seconds
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_GLOBAL_INCLUDE, "Global include", true); // g (Q, ck): TRUE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh] 
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_GLOBAL_INCLUDE, "Global include", false); // g (Q, ck): FALSE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_global_include false [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh] 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, functions.vh]", 4, false); // B (D, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,510 MB. GUI used memory: 44 MB. Current time: 1/17/19 1:17:26 AM UTC
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, functions.vh]", 4, false); // B (D, ck)
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_GLOBAL_INCLUDE, "Global include", true); // g (Q, ck): TRUE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci' is already up-to-date 
+// Tcl Message: [Thu Jan 17 01:17:58 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 585ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 535 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 14 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 41 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "4 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci' is already up-to-date 
+// Tcl Message: [Thu Jan 17 01:28:25 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 17); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, VC709_Gen3x4If128.xdc]", 19, false); // B (D, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 102 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+// [GUI Memory]: 96 MB (+78kb) [00:45:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,528 MB. GUI used memory: 45 MB. Current time: 1/17/19 1:47:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 5,528 MB. GUI used memory: 44 MB. Current time: 1/17/19 2:17:26 AM UTC
+// Elapsed time: 4100 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'refclk_ibuf' of type 'IBUFDS_GTE2' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 5, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'refclk_ibuf' of type 'IBUFDS_GTE2' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 5, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'refclk_ibuf' of type 'IBUFDS_GTE2' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 5, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'refclk_ibuf' of type 'IBUFDS_GTE2' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 5, false, false, false, false, false, true); // ah (O, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 5,528 MB. GUI used memory: 44 MB. Current time: 1/17/19 2:47:26 AM UTC
+// Elapsed time: 1008 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 16); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 16); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128]", 15, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128]", 15, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false); // B (D, ck)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (ck): Generate Output Products: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 5,530 MB. GUI used memory: 94 MB. Current time: 1/17/19 2:56:06 AM UTC
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] 
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] 
+// Tcl Message: INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// [GUI Memory]: 101 MB (+93kb) [02:07:06]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// 'bn' command handler elapsed time: 16 seconds
+dismissDialog("Managing Output Products"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+// Elapsed time: 26 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (ck): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] 
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] 
+// Tcl Message: INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// 'bn' command handler elapsed time: 10 seconds
+dismissDialog("Managing Output Products"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,562 MB. GUI used memory: 45 MB. Current time: 1/17/19 2:57:11 AM UTC
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (ck): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Reset and Re-run"); // i (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci' is already up-to-date 
+// Tcl Message: [Thu Jan 17 02:57:15 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "PCIeGen3x4If128_synth_1 ; PCIeGen3x4If128 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2015) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ;  ; Vivado Synthesis Defaults", 3, "PCIeGen3x4If128_synth_1", 0, false); // ax (O, ck)
+// PAPropertyPanels.initPanels (PCIeGen3x4If128_synth_1) elapsed time: 1.1s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "PCIeGen3x4If128_synth_1 ; PCIeGen3x4If128 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2015) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ;  ; Vivado Synthesis Defaults", 3, "PCIeGen3x4If128_synth_1", 0, false, false, false, false, true, false); // ax (O, ck) - Popup Trigger
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.2s
+// Elapsed time: 21 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 5051 ; 8720 ; 26.0 ; 0 ; 0 ; Thu Jan 17 01:17:59 UTC 2019 ; 00:04:35 ; Vivado Synthesis Defaults (Vivado Synthesis 2014) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ; ip-172-31-22-253.ap-southeast-1.compute.internal ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ax (O, ck) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_RUNS, "Reset Runs"); // ad (aj, ck)
+// q (ck): Reset Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (q)
+// q (ck): Reset Runs: addNotify
+// bx (q):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.2s
+dismissDialog("Resetting Runs"); // bx (q)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.2s
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci' is already up-to-date 
+// Tcl Message: [Thu Jan 17 02:57:58 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 02:57:58 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "PCIeGen3x4If128_synth_1 ; PCIeGen3x4If128 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2015) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ;  ; Vivado Synthesis Defaults", 3, "PCIeGen3x4If128_synth_1", 0, false); // ax (O, ck)
+// PAPropertyPanels.initPanels (PCIeGen3x4If128_synth_1) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE
+// aI (ck): Reset Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// Tcl Message: reset_target all [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: RUN_FAILED
+// Tcl Message: export_ip_user_files -of_objects  [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -sync -no_script -force -quiet 
+// 'bn' command handler elapsed time: 8 seconds
+dismissDialog("Managing Output Products"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), riffa : riffa_wrapper_vc709 (riffa_wrapper_vc709.v)]", 13, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (ck): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: generate_target all [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pcie4_uscale_plus_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pcie4_uscale_plus_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pcie4_uscale_plus_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'pcie4_uscale_plus_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'pcie4_uscale_plus_0'... 
+// Tcl Message: INFO: [Device 21-403] Loading part xcvu9p-flgb2104-2-i 
+// [Engine Memory]: 6,167 MB (+613815kb) [02:10:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,167 MB. GUI used memory: 65 MB. Current time: 1/17/19 2:59:56 AM UTC
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target: Time (s): cpu = 00:00:24 ; elapsed = 00:01:13 . Memory (MB): peak = 7328.949 ; gain = 605.359 ; free physical = 218 ; free virtual = 37530 
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 2 pcie4_uscale_plus_0_synth_1 
+// Tcl Message: [Thu Jan 17 03:00:09 2019] Launched pcie4_uscale_plus_0_synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/pcie4_uscale_plus_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// 'bn' command handler elapsed time: 89 seconds
+// Elapsed time: 86 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 6,199 MB. GUI used memory: 53 MB. Current time: 1/17/19 3:00:27 AM UTC
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "PCIeGen3x4If128_synth_1 ; PCIeGen3x4If128 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2015) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ;  ; Vivado Synthesis Defaults", 3, "PCIeGen3x4If128_synth_1", 0, false); // ax (O, ck)
+// PAPropertyPanels.initPanels (PCIeGen3x4If128_synth_1) elapsed time: 0.2s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "PCIeGen3x4If128_synth_1 ; PCIeGen3x4If128 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2015) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ;  ; Vivado Synthesis Defaults", 3, "PCIeGen3x4If128_synth_1", 0, false, false, false, false, true, false); // ax (O, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128]", 15, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128]", 15, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128]", 15, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 16); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, PCIeGen3x4If128]", 17, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128]", 15, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PCIeGen3x4If128]", 15, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, PCIeGen3x4If128]", 17, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, PCIeGen3x4If128]", 17, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/PCIeGen3x4If128.xci] -no_script -reset -force -quiet 
+// TclEventType: RUN_DELETE
+// aE (ck): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: remove_files  -fileset PCIeGen3x4If128 /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/PCIeGen3x4If128.xci 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [Project 1-386] Moving file '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/PCIeGen3x4If128.xci' from fileset 'PCIeGen3x4If128' to fileset 'sources_1'. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+dismissDialog("Remove Sources"); // bx (aE)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 267 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 03:05:43 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 37 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-660] unable to resolve 'upkt_to_trellis_type' [/home/centos/daniel/riffa/fpga/riffa_hdl/rxr_engine_ultrascale.v:196]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/daniel/riffa/fpga/riffa_hdl/rxr_engine_ultrascale.v;-;;-;16;-;line;-;196;-;;-;16;-;"); // ah (O, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 6,236 MB. GUI used memory: 63 MB. Current time: 1/17/19 3:07:07 AM UTC
+// Elapsed time: 75 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Resetting Runs : addNotify
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 03:07:44 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 03:07:44 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+// Elapsed time: 39 seconds
+selectCodeEditor("rxr_engine_ultrascale.v", 156, 127); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+// Elapsed time: 191 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "7 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 135 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+// [GUI Memory]: 108 MB (+2124kb) [02:25:46]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 6,252 MB. GUI used memory: 63 MB. Current time: 1/17/19 3:22:06 AM UTC
+// Elapsed time: 482 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'refclk_ibuf' of type 'IBUFDS_GTE2' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 5, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'refclk_ibuf' of type 'IBUFDS_GTE2' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 5, false, false, false, false, false, true); // ah (O, ck) - Double Click
+// Elapsed time: 236 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Resetting Runs : addNotify
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 03:26:22 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 03:26:22 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 104 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "2 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+// Elapsed time: 71 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v), riffa : riffa_wrapper_vc709 (riffa_wrapper_vc709.v), engine_layer_inst : engine_layer (engine_layer.v), genblk1.rx_engine_ultrascale_inst : rx_engine_ultrascale (rx_engine_ultrascale.v)]", 7, true); // B (D, ck) - Node
+setText(PAResourceOtoP.ProjectSettingsGadget_PROJECT_LOCATION, "/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj"); // X (Q, ck)
+// [GUI Memory]: 115 MB (+1397kb) [02:41:15]
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 87 seconds
+setText(PAResourceOtoP.ProjectSettingsGadget_PROJECT_LOCATION, "/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj"); // X (Q, ck)
+setText(PAResourceOtoP.ProjectSettingsGadget_PROJECT_LOCATION, "/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj"); // X (Q, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 126 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "IBUFDS"); // l (aQ, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 26 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v)]", 3); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VC709_Gen3x4If128 (Huawei_Gen4.v)]", 3); // B (D, ck)
+// Elapsed time: 180 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (ck): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,984 MB. GUI used memory: 50 MB. Current time: 1/17/19 3:37:24 AM UTC
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (ck)
+// Elapsed time: 138 seconds
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.xpr", 0); // q (O, ck)
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.xpr. Version: Vivado v2018.2_AR71275_op 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2.op2258646/data/ip'. 
+// Project name: Huawei_Gen4; location: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj; part: xcvu9p-flgb2104-2-i
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, c)
+// Elapsed time: 87 seconds
+String[] filenames31467 = {"/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc", "/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrb_pin_x8.xdc", "/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrc_pin_x8.xdc", "/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrd_pin_x8.xdc", "/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc"};
+setFileChooser(filenames31467);
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "VC709_Gen3x4If128.xdc ; /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/constr", 0, "VC709_Gen3x4If128.xdc", 0); // s (O, c)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (f, c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 104 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse {/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrb_pin_x8.xdc /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrc_pin_x8.xdc /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrd_pin_x8.xdc /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, VC709_Gen3x4If128.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, VC709_Gen3x4If128.xdc]", 6, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/constr/VC709_Gen3x4If128.xdc] -no_script -reset -force -quiet 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/constr/VC709_Gen3x4If128.xdc 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 03:42:02 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 03:42:02 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "2 errors"); // h (Q, ck)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "2 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 18 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 25 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false, true, false, false, false, false); // B (D, ck) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_SYNTHESIS, "Synthesis", false); // g (Q, ck): FALSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrb_pin_x8.xdc]", 7, false); // B (D, ck)
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_SYNTHESIS, "Synthesis", false); // g (Q, ck): FALSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrb_pin_x8.xdc] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrc_pin_x8.xdc]", 8, false); // B (D, ck)
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_SYNTHESIS, "Synthesis", false); // g (Q, ck): FALSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrc_pin_x8.xdc] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrd_pin_x8.xdc]", 9, false); // B (D, ck)
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_SYNTHESIS, "Synthesis", false); // g (Q, ck): FALSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrd_pin_x8.xdc] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false); // B (D, ck)
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_SYNTHESIS, "Synthesis", false); // g (Q, ck): FALSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrb_pin_x8.xdc]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrc_pin_x8.xdc]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrd_pin_x8.xdc]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrd_pin_x8.xdc]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrc_pin_x8.xdc]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrb_pin_x8.xdc]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: RUN_COMPLETED
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.3s
+// [GUI Memory]: 121 MB (+435kb) [02:58:08]
+// Elapsed time: 142 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ; 5051 ; 8720 ; 26.0 ; 0 ; 0 ; Thu Jan 17 03:42:03 UTC 2019 ; 00:04:35 ; Vivado Synthesis Defaults (Vivado Synthesis 2014) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ; ip-172-31-22-253.ap-southeast-1.compute.internal ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ax (O, ck) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_RUNS, "Reset Runs"); // ad (aj, ck)
+// q (ck): Reset Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (q)
+// q (ck): Reset Runs: addNotify
+// bx (q):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (q)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 03:47:25 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 03:47:25 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrb_pin_x8.xdc]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrc_pin_x8.xdc]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrd_pin_x8.xdc]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrd_pin_x8.xdc]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrc_pin_x8.xdc]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrb_pin_x8.xdc]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+// PAPropertyPanels.initPanels (constrs_1) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_FX100_Gen4 (Huawei_Gen4.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_FX100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_FX100_Gen4 (Huawei_Gen4.v), riffa : riffa_wrapper_vc709 (riffa_wrapper_vc709.v)]", 5, true); // B (D, ck) - Node
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 83 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Jan 17 03:47:26 UTC 2019 ; 00:01:42 ; Vivado Synthesis Defaults (Vivado Synthesis 2014) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ; ip-172-31-22-253.ap-southeast-1.compute.internal ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ax (O, ck) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_RUNS, "Reset Runs"); // ad (aj, ck)
+// q (ck): Reset Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (q)
+// HOptionPane Warning: 'Run 'synth_1' appears to be running or queued. Reset anyway? (Reset Runs)'
+// q (ck): Reset Runs: addNotify
+// bx (q):  Resetting Runs : addNotify
+selectButton("PAResourceAtoD.DeleteRunsDialog_THERE_SOME_JOBS_THAT_APPEAR_TOBE_Yes", "Yes"); // JButton (A, H)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (q)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 03:49:22 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 03:49:22 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 175 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i (c, ck)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, ck)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+// [GUI Memory]: 129 MB (+1948kb) [03:03:28]
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 110 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i (A, ck)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // i (A, ck)
+// Elapsed time: 19 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i (A, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 58 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+// Elapsed time: 82 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'refclk_ibuf' of type 'IBUFDS_GTE2' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 5, false); // ah (O, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ibufds_"); // l (aQ, ck)
+selectCodeEditor("Huawei_Gen4.v", 217, 367); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // O (O, ck)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ibufds", true); // OverlayTextField (P, ck)
+// [GUI Memory]: 137 MB (+2184kb) [03:08:55]
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale FPGAs Transceivers Wizard ;  ; Production ; Included ; xilinx.com:ip:gtwizard_ultrascale:1.7", 6, "UltraScale FPGAs Transceivers Wizard", 0, false); // O (O, ck)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "gt"); // OverlayTextField (P, ck)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale FPGAs Transceivers Wizard ;  ; Production ; Included ; xilinx.com:ip:gtwizard_ultrascale:1.7", 6); // O (O, ck)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale FPGAs Transceivers Wizard ;  ; Production ; Included ; xilinx.com:ip:gtwizard_ultrascale:1.7", 6, "UltraScale FPGAs Transceivers Wizard", 0, false, false, false, false, false, true); // O (O, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (ck):  Customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// r (ck): Customize IP: addNotify
+dismissDialog("Customize IP"); // l (ck)
+// Elapsed time: 10 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Physical Resources", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Optional Features", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Structural Options", 3); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Physical Resources", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aY (C, r)
+dismissDialog("Customize IP"); // r (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), test_channels[0].module1 : chnl_tester (chnl_tester.v)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), test_channels[0].module1 : chnl_tester (chnl_tester.v)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// [GUI Memory]: 149 MB (+5154kb) [03:09:52]
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// C (ck): Settings: addNotify
+// [GUI Memory]: 163 MB (+7105kb) [03:10:08]
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Implementation]", 4, false); // M (C)
+// Elapsed time: 15 seconds
+selectTree("PAResourceQtoS.SettingsProjectRunPage_CHOOSE_REPORT_STRATEGY", "[Report Strategies, Vivado Report Strategies, Vivado Implementation Default Reports]", 2, false); // TreeChooserPanel (C, ResizableWindow)
+// Elapsed time: 13 seconds
+selectTree("PAResourceOtoP.ProgramOptionsPanelImpl_STRATEGY", "[Run Strategies, Vivado Strategies, Vivado Implementation Defaults]", 2, false); // TreeChooserPanel (C, ResizableWindow)
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// Tcl Command: 'config_webtalk -user on'
+// bx (ck):  Change Settings : addNotify
+// Tcl Message: config_webtalk -user on 
+// q (ck): Reset Runs: addNotify
+dismissDialog("Change Settings"); // bx (ck)
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (q)
+// q (ck): Reset Runs: addNotify
+// bx (q):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: RUN_MODIFY
+// Tcl Message: set_property flow {Vivado Implementation 2018} [get_runs impl_1] 
+dismissDialog("Resetting Runs"); // bx (q)
+dismissDialog("Settings"); // C (ck)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// bx (ck):  Refresh All IP Repositories : addNotify
+dismissDialog("Refresh All IP Repositories"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Jan 17 04:00:12 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+// Elapsed time: 29 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, ck)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i (c, ck)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, ck)
+// [GUI Memory]: 174 MB (+2961kb) [03:11:59]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 379 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+// HMemoryUtils.trashcanNow. Engine heap size: 6,077 MB. GUI used memory: 112 MB. Current time: 1/17/19 4:07:27 AM UTC
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g (aQ, ck): TRUE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+// Elapsed time: 15 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g (aQ, ck): TRUE
+// Elapsed time: 39 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g (aQ, ck): TRUE
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// C (ck): Settings: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (C)
+dismissDialog("Settings"); // C (ck)
+// Elapsed time: 261 seconds
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "xcvu9p-flgb2104-2-i"); // h (Q, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// C (ck): Settings: addNotify
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // q (a, C)
+// c (C): Select Device: addNotify
+// Elapsed time: 22 seconds
+selectTableHeader(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "GTPE2 Transceivers", 9); // v (O, c)
+// Elapsed time: 16 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (c)
+dismissDialog("Select Device"); // c (C)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (C)
+dismissDialog("Settings"); // C (ck)
+// Elapsed time: 250 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Netlist 29-180] Cell 'IBUFDS_GTE2' is not a supported primitive for virtexuplus part: xcvu9p-flgb2104-2-i.  Instance 'refclk_ibuf' will be treated as a black box, not an architecture primitive [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v:199]. ]", 6, false); // ah (O, ck)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g (aQ, ck): TRUE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Netlist 29-180] Cell 'IBUFDS_GTE2' is not a supported primitive for virtexuplus part: xcvu9p-flgb2104-2-i.  Instance 'refclk_ibuf' will be treated as a black box, not an architecture primitive [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v:199]. ]", 6, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v;-;;-;16;-;line;-;199;-;;-;16;-;"); // ah (O, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Netlist 29-180] Cell 'IBUFDS_GTE2' is not a supported primitive for virtexuplus part: xcvu9p-flgb2104-2-i.  Instance 'refclk_ibuf' will be treated as a black box, not an architecture primitive [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v:199]. ]", 6, false); // ah (O, ck)
+// [GUI Memory]: 184 MB (+1209kb) [03:31:17]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 131 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Jan 17 04:21:21 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 04:21:21 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+// Elapsed time: 29 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "2 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 58 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Jan 17 04:21:22 UTC 2019 ; 00:00:36 ; Vivado Synthesis Defaults (Vivado Synthesis 2014) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ; ip-172-31-22-253.ap-southeast-1.compute.internal ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ax (O, ck) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_RUNS, "Reset Runs"); // ad (aj, ck)
+// q (ck): Reset Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (q)
+// HOptionPane Warning: 'Run 'synth_1' appears to be running or queued. Reset anyway? (Reset Runs)'
+// q (ck): Reset Runs: addNotify
+// bx (q):  Resetting Runs : addNotify
+selectButton("PAResourceAtoD.DeleteRunsDialog_THERE_SOME_JOBS_THAT_APPEAR_TOBE_Yes", "Yes"); // JButton (A, H)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (q)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Jan 17 04:23:03 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 04:23:03 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+// Elapsed time: 113 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, ck)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // i (A, ck)
+// Elapsed time: 31 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 8); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 13, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 13, false); // B (D, ck)
+selectCodeEditor("fx600.xdc", 329, 245); // ce (w, ck)
+// Elapsed time: 20 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_refclk_p", true); // l (aQ, ck)
+// Elapsed time: 16 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_ref_clk_p", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_ref_clk_p"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_ref_clk_p"); // l (aQ, ck)
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_ref_clk_p"); // l (aQ, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), riffa : riffa_wrapper_vc709 (riffa_wrapper_vc709.v)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), riffa : riffa_wrapper_vc709 (riffa_wrapper_vc709.v)]", 5, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_refclk_p", true); // l (aQ, ck)
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aQ, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_refclk_p", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_refclk_p"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_refclk_p"); // l (aQ, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie_refclk_p"); // l (aQ, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Huawei_Gen4.v", 3); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pcie", true); // l (aQ, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fx600.xdc", 1); // k (j, ck)
+selectCodeEditor("fx600.xdc", 431, 50); // ce (w, ck)
+selectCodeEditor("fx600.xdc", 431, 50, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "fx600.xdc", 'c'); // ce (w, ck)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ck)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_ports pin_pcie_ref_clk_p", true); // aA (Z, ck)
+// Tcl Command: 'get_ports pin_pcie_ref_clk_p'
+// Tcl Command: 'get_ports pin_pcie_ref_clk_p'
+// Tcl Message: get_ports pin_pcie_ref_clk_p 
+// Tcl Message: ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command. 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xcvu9p-flgb2104-2-i 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PHY_BLOCK_NEW
+// TclEventType: PHY_RECT_SELECT
+// TclEventType: PHY_BLOCK_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 6,342 MB. GUI used memory: 106 MB. Current time: 1/17/19 4:29:03 AM UTC
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: PHY_RECT_SELECT
+// HMemoryUtils.trashcanNow. Engine heap size: 6,426 MB. GUI used memory: 105 MB. Current time: 1/17/19 4:29:17 AM UTC
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// [Engine Memory]: 6,597 MB (+127700kb) [03:40:18]
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 6,597 MB. GUI used memory: 105 MB. Current time: 1/17/19 4:29:24 AM UTC
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /opt/Xilinx/Vivado/2018.2.op2258646/data/parts/xilinx/virtexuplus/devint/virtexuplus/xcvu9p/xcvu9p.xgd; ZipEntry: xcvu9p_floorplan.xgd elapsed time: 2.6s
+// TclEventType: RUN_STEP_COMPLETED
+// Xgd.load filename: /opt/Xilinx/Vivado/2018.2.op2258646/data/parts/xilinx/virtexuplus/devint/virtexuplus/xcvu9p/xcvu9p.xgd; ZipEntry: xcvu9p_detail.xgd elapsed time: 8.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 14.5s
+// [GUI Memory]: 241 MB (+49329kb) [03:40:37]
+// [Engine Memory]: 7,119 MB (+201371kb) [03:40:37]
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (ddra_pin_x8.xdc) elapsed time: 0.2s
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/.Xil/Vivado-27157-ip-172-31-22-253.ap-southeast-1.compute.internal/pcie4_uscale_plus_0/pcie4_uscale_plus_0.dcp' for cell 'pcie4_7x_0_i' INFO: [Netlist 29-17] Analyzing 284 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2_AR71275_op INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:102] 
+// Tcl Message: INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:102] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102] INFO: [Timing 38-2] Deriving generated clocks [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 7781.031 ; gain = 255.172 ; free physical = 120 ; free virtual = 38018 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:103] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:104] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:105] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:106] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:107] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:114] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:114] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127] 
+// Tcl Message: Finished Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc] Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_7x_0_i/inst' Finished Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_7x_0_i/inst' Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc] for cell 'pcie4_7x_0_i/inst' 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:63] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:64] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:67] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:68] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:75] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:76] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 8 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 2 instances   RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances  
+// HMemoryUtils.trashcanNow. Engine heap size: 7,123 MB. GUI used memory: 201 MB. Current time: 1/17/19 4:29:48 AM UTC
+// Tcl Message: open_run: Time (s): cpu = 00:00:38 ; elapsed = 00:01:07 . Memory (MB): peak = 8306.969 ; gain = 892.441 ; free physical = 468 ; free virtual = 37642 
+// Device view-level: 0.0
+// ExpRunCommands.openSynthResults elapsed time: 72.9s
+// 'dP' command handler elapsed time: 73 seconds
+// S (ck): Critical Messages: addNotify
+// Elapsed time: 74 seconds
+dismissDialog("Open Synthesized Design"); // bx (ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g (aQ, ck): TRUE
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ck)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_ports pin_pcie_ref_clk_p", true); // aA (Z, ck)
+// Tcl Command: 'get_ports pin_pcie_ref_clk_p'
+// Tcl Command: 'get_ports pin_pcie_ref_clk_p'
+// Tcl Message: get_ports pin_pcie_ref_clk_p 
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get_por*}'
+// Tcl Command: 'rdi::info_commands {get_port*}'
+// Tcl Command: 'rdi::info_commands {get_ports*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_ports", true); // aA (Z, ck)
+// Tcl Command: 'get_ports'
+// Tcl Command: 'get_ports'
+// Tcl Message: get_ports 
+// Tcl Message: LED[0] LED[1] LED[2] LED[3] LED[4] LED[5] LED[6] LED[7] PCIE_REFCLK_N PCIE_REFCLK_P PCIE_RESET_N PCI_EXP_RXN[0] PCI_EXP_RXN[1] PCI_EXP_RXN[2] PCI_EXP_RXN[3] PCI_EXP_RXP[0] PCI_EXP_RXP[1] PCI_EXP_RXP[2] PCI_EXP_RXP[3] PCI_EXP_TXN[0] PCI_EXP_TXN[1] PCI_EXP_TXN[2] PCI_EXP_TXN[3] PCI_EXP_TXP[0] PCI_EXP_TXP[1] PCI_EXP_TXP[2] PCI_EXP_TXP[3] 
+// [GUI Memory]: 256 MB (+3935kb) [03:41:31]
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_ports pcie_ref_clk_p", true); // aA (Z, ck)
+// Tcl Command: 'get_ports pcie_ref_clk_p'
+// Tcl Command: 'get_ports pcie_ref_clk_p'
+// Tcl Message: get_ports pcie_ref_clk_p 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_ports pin_pcie_ref_clk_p", true); // aA (Z, ck)
+// Tcl Command: 'get_ports pin_pcie_ref_clk_p'
+// Tcl Command: 'get_ports pin_pcie_ref_clk_p'
+// Tcl Message: get_ports pin_pcie_ref_clk_p 
+// HMemoryUtils.trashcanNow. Engine heap size: 7,123 MB. GUI used memory: 207 MB. Current time: 1/17/19 4:30:51 AM UTC
+// WARNING: updateGUI() is taking  1866 ms.
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_ports pin_pcie_ref_clk_", true); // aA (Z, ck)
+// Tcl Command: 'get_ports pin_pcie_ref_clk_'
+// Tcl Command: 'get_ports pin_pcie_ref_clk_'
+// Tcl Message: get_ports pin_pcie_ref_clk_ 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_ports pin_pcie_ref_clk", true); // aA (Z, ck)
+// Tcl Command: 'get_ports pin_pcie_ref_clk'
+// Tcl Command: 'get_ports pin_pcie_ref_clk'
+// Tcl Message: get_ports pin_pcie_ref_clk 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aA (Z, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fx600.xdc", 2); // k (j, ck)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 906, 68); // dn (ae, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,373 MB. GUI used memory: 206 MB. Current time: 1/17/19 4:31:19 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 7,658 MB. GUI used memory: 206 MB. Current time: 1/17/19 4:31:34 AM UTC
+// [Engine Memory]: 7,658 MB (+192082kb) [03:42:29]
+// Elapsed time: 30 seconds
+selectCodeEditor("fx600.xdc", 440, 47); // ce (w, ck)
+selectCodeEditor("fx600.xdc", 440, 47, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("fx600.xdc", 440, 47); // ce (w, ck)
+selectCodeEditor("fx600.xdc", 440, 47); // ce (w, ck)
+selectCodeEditor("fx600.xdc", 440, 47, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "fx600.xdc", 'c'); // ce (w, ck)
+// RouteApi::initDelayMediator elapsed time: 122.1s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p]", true); // aA (Z, ck)
+// Tcl Command: 'set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p]'
+// Tcl Command: 'set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p]'
+// Tcl Message: set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p] 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref]", true); // aA (Z, ck)
+// Tcl Command: 'set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref]'
+// Tcl Command: 'set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref]'
+// Tcl Message: set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref] 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p]", true); // aA (Z, ck)
+// Tcl Command: 'set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p]'
+// Tcl Command: 'set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p]'
+// Tcl Message: set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p] 
+// Elapsed time: 22 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aA (Z, ck)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aA (Z, ck)
+// Elapsed time: 58 seconds
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "1 error"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Opt 31-67] Problem: A LUT2 cell in the design is missing a connection on input pin I0, which is used by the LUT equation. This pin has either been left unconnected in the design or the connection was removed due to the trimming of unused logic. The LUT cell name is: pcie4_7x_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_e4_inst_i_2.. ]", 3, false); // ah (O, ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Synthesis", "Synthesized Design", "DesignTask.NETLIST_PLANNING");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// a (ck): Close Design: addNotify
+dismissDialog("Confirm Close"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,862 MB. GUI used memory: 198 MB. Current time: 1/17/19 4:34:14 AM UTC
+// Engine heap size: 7,862 MB. GUI used memory: 199 MB. Current time: 1/17/19 4:34:14 AM UTC
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // a (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 89 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Jan 17 04:35:47 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 04:35:47 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 305 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "1 error"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 121 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "1 error"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 101 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g (aQ, ck): TRUE
+// Elapsed time: 21 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:1]. ]", 8, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc;-;;-;16;-;line;-;1;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-1039] No cells specified to remove. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:92]. ]", 10, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc;-;;-;16;-;line;-;92;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:91]. ]", 9, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc;-;;-;16;-;line;-;91;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:63]. ]", 13, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc;-;;-;16;-;line;-;63;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102]. ]", 12, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc;-;;-;16;-;line;-;102;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:63]. ]", 13, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc;-;;-;16;-;line;-;63;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 72 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 6, true, false, false, false, true, false); // ah (O, ck) - Popup Trigger - Node
+selectMenuItem(PAResourceItoN.MsgTreePanel_DISCARD_USER_CREATED_MESSAGES, "Discard User Created Messages"); // ad (K, ck)
+// Elapsed time: 301 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (ck):  Re-customize IP : addNotify
+// r (ck): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (ck)
+// Elapsed time: 14 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Capabilities", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PF IDs", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PF BARs", 3); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Legacy/MSI Cap", 4); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Capabilities", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PF IDs", 2); // aY (C, r)
+dismissDialog("Re-customize IP"); // r (ck)
+// Elapsed time: 108 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "1 error"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 04:55:20 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 04:55:20 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "1 error"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 323 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (ck): Re-customize IP: addNotify
+// Elapsed time: 16 seconds
+selectButton(PAResourceAtoD.CustomizeCoreDialog_DOCUMENTATION, "Documentation"); // B (f, r)
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_PRODUCT_GUIDE, "Product Guide"); // ad (aj, r)
+// Run Command: PAResourceCommand.PACommandNames_SHOW_PRODUCT_GUIDE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 34 seconds
+dismissDialog("Re-customize IP"); // r (ck)
+// [GUI Memory]: 273 MB (+3791kb) [04:12:45]
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 107 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,880 MB. GUI used memory: 137 MB. Current time: 1/17/19 5:04:18 AM UTC
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 169 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Jan 17 05:06:27 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 05:06:27 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Running synth_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Jan 17 05:06:28 UTC 2019 ; 00:00:09 ; Vivado Synthesis Defaults (Vivado Synthesis 2014) ; Vivado Synthesis Default Reports ; xcvu9p-flgb2104-2-i ; ip-172-31-22-253.ap-southeast-1.compute.internal ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ax (O, ck) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_RUNS, "Reset Runs"); // ad (aj, ck)
+// q (ck): Reset Runs: addNotify
+// HOptionPane Warning: 'Run 'synth_1' appears to be running or queued. Reset anyway? (Reset Runs)'
+// q (ck): Reset Runs: addNotify
+// bx (q):  Resetting Runs : addNotify
+selectButton("PAResourceAtoD.DeleteRunsDialog_THERE_SOME_JOBS_THAT_APPEAR_TOBE_Yes", "Yes"); // JButton (A, H)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (q)
+dismissDialog("Resetting Runs"); // bx (q)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 05:06:58 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 05:06:58 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 7,912 MB. GUI used memory: 134 MB. Current time: 1/17/19 5:34:18 AM UTC
+// Elapsed time: 3391 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 7,928 MB. GUI used memory: 136 MB. Current time: 1/17/19 6:03:53 AM UTC
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// 'c' command handler elapsed time: 6 seconds
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 06:03:59 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 06:03:59 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 395 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "1 error"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 91 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "1 error"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 570 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false, false, false, false, false, true); // u (O, ck) - Double Click
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FPGA Features and Design ;  ;  ;  ; ", 11); // O (O, ck)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FPGA Features and Design ;  ;  ;  ; ", 11); // O (O, ck)
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // ad
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "xcvu9p-flgb2104-2-i"); // h (Q, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// C (ck): Settings: addNotify
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // q (a, C)
+// c (C): Select Device: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 7,960 MB. GUI used memory: 134 MB. Current time: 1/17/19 6:25:18 AM UTC
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 226 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (c)
+dismissDialog("Select Device"); // c (C)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (C)
+dismissDialog("Settings"); // C (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 06:26:15 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 06:26:15 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 18 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "1 error"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 7,992 MB. GUI used memory: 132 MB. Current time: 1/17/19 6:27:08 AM UTC
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 06:27:32 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 06:27:32 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "3 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 402 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 8,026 MB. GUI used memory: 135 MB. Current time: 1/17/19 6:36:14 AM UTC
+// Elapsed time: 141 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), riffa : riffa_wrapper_vc709 (riffa_wrapper_vc709.v)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (ck): Re-customize IP: addNotify
+// Elapsed time: 18 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Capabilities", 1); // aY (C, r)
+// Elapsed time: 10 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PF IDs", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PF BARs", 3); // aY (C, r)
+// Elapsed time: 13 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Legacy/MSI Cap", 4); // aY (C, r)
+applyEscape(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null); // B (D, ck)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+// Elapsed time: 23 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i (N, ck)
+// Elapsed time: 18 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 3); // i (N, ck)
+// Elapsed time: 42 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, functions.vh]", 4, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_CLEAR_GLOBAL_INCLUDE, "Clear Global Include"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_CLEAR_GLOBAL_INCLUDE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_global_include false [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 3); // i (N, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 8,042 MB (+756kb) [05:50:16]
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 06:40:16 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 06:40:16 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-660] unable to resolve 'clog2s' [/home/centos/daniel/riffa/fpga/xilinx/huawei/riffa_wrapper_vc709.v:164]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/daniel/riffa/fpga/xilinx/huawei/riffa_wrapper_vc709.v;-;;-;16;-;line;-;164;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, tlp.vh]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, tlp.vh]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, ultrascale.vh]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, ultrascale.vh]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "riffa_wrapper_vc709.v", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, functions.vh]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, functions.vh]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-660] unable to resolve 'clog2s' [/home/centos/daniel/riffa/fpga/xilinx/huawei/riffa_wrapper_vc709.v:164]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/centos/daniel/riffa/fpga/xilinx/huawei/riffa_wrapper_vc709.v;-;;-;16;-;line;-;164;-;;-;16;-;"); // ah (O, ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 3); // i (N, ck)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, functions.vh]", 1, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, functions.vh]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, functions.vh]", 1, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_SET_FILE_TYPE, "Set File Type..."); // ad (aj, ck)
+// Y (ck): Set Type: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (Y)
+dismissDialog("Set Type"); // Y (ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, functions.vh]", 3, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, functions.vh]", 3, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_GLOBAL_INCLUDE, "Set Global Include"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SET_GLOBAL_INCLUDE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 8,073 MB. GUI used memory: 196 MB. Current time: 1/17/19 6:42:48 AM UTC
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, ultrascale.vh]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, ultrascale.vh]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 06:43:03 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 06:43:03 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, schedules.vh]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, schedules.vh]", 8, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("schedules.vh", 1089, 129); // ce (w, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "4 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 334 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 17, false); // B (D, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// C (ck): Settings: addNotify
+// Elapsed time: 16 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Synthesis]", 3, false); // M (C)
+// Elapsed time: 10 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Elaboration]", 2, false); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Implementation]", 4, false); // M (C)
+// Elapsed time: 14 seconds
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // M (C) - Node
+selectCheckBox(PAResourceQtoS.SettingsProjectIPPage_USE_CORE_CONTAINERS_FOR_IP, "Use Core Containers for IP", true); // g (Q, C): TRUE
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // M (C)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// bx (ck):  Change Settings : addNotify
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+dismissDialog("Change Settings"); // bx (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property coreContainer.enable 1 [current_project] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// bx (ck):  Apply IP Settings : addNotify
+// TclEventType: PROJECT_CHANGE
+dismissDialog("Apply IP Settings"); // bx (ck)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+dismissDialog("Settings"); // C (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 8,097 MB. GUI used memory: 152 MB. Current time: 1/17/19 6:51:59 AM UTC
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Jan 17 06:52:26 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "pcie4_uscale_plus_0_synth_1 ; pcie4_uscale_plus_0 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 4357 ; 4898 ; 22.0 ; 0 ; 0 ; Thu Jan 17 03:00:11 UTC 2019 ; 00:05:14 ; Vivado Synthesis Defaults (Vivado Synthesis 2018) ; Vivado Synthesis Default Reports (Vivado Synthesis 2018) ; xcvu9p-flgb2104-2-i ; ip-172-31-22-253.ap-southeast-1.compute.internal ; Vivado Synthesis Defaults", 3, "pcie4_uscale_plus_0_synth_1", 0, false); // ax (O, ck)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "pcie4_uscale_plus_0_synth_1 ; pcie4_uscale_plus_0 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 4357 ; 4898 ; 22.0 ; 0 ; 0 ; Thu Jan 17 03:00:11 UTC 2019 ; 00:05:14 ; Vivado Synthesis Defaults (Vivado Synthesis 2018) ; Vivado Synthesis Default Reports (Vivado Synthesis 2018) ; xcvu9p-flgb2104-2-i ; ip-172-31-22-253.ap-southeast-1.compute.internal ; Vivado Synthesis Defaults", 3, "pcie4_uscale_plus_0_synth_1", 0, false, false, false, false, true, false); // ax (O, ck) - Popup Trigger
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "pcie4_uscale_plus_0_synth_1 ; pcie4_uscale_plus_0 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 4357 ; 4898 ; 22.0 ; 0 ; 0 ; Thu Jan 17 03:00:11 UTC 2019 ; 00:05:14 ; Vivado Synthesis Defaults (Vivado Synthesis 2018) ; Vivado Synthesis Default Reports (Vivado Synthesis 2018) ; xcvu9p-flgb2104-2-i ; ip-172-31-22-253.ap-southeast-1.compute.internal ; Vivado Synthesis Defaults", 3, "pcie4_uscale_plus_0_synth_1", 0, false); // ax (O, ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v), pcie4_7x_0_i : pcie4_uscale_plus_0 (pcie4_uscale_plus_0.xci)]", 12, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+// Elapsed time: 16 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, ck)
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "2 errors"); // h (Q, ck)
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "2 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 231 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 3); // i (N, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 8,121 MB. GUI used memory: 153 MB. Current time: 1/17/19 6:59:14 AM UTC
+// Elapsed time: 110 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Netlist 29-180] Cell 'IBUFDS_GTE2' is not a supported primitive for virtexuplus part: xcvu9p-flgb2104-2-i.  Instance 'refclk_ibuf' will be treated as a black box, not an architecture primitive [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v:198]. ]", 3, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Netlist 29-180] Cell 'IBUFDS_GTE2' is not a supported primitive for virtexuplus part: xcvu9p-flgb2104-2-i.  Instance 'refclk_ibuf' will be treated as a black box, not an architecture primitive [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v:198]. ]", 3, true, false, false, false, true, false); // ah (O, ck) - Popup Trigger - Node
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // aa (K, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 8,121 MB. GUI used memory: 152 MB. Current time: 1/17/19 7:29:14 AM UTC
+// Elapsed time: 2101 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 07:35:22 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 18 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "2 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 280 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 07:40:22 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 106 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i (A, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 33 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 375 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// C (ck): Settings: addNotify
+// Elapsed time: 18 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // M (C)
+collapseTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Bitstream]", 5, false); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Simulation]", 1, false); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Synthesis]", 3, false); // M (C)
+// Elapsed time: 19 seconds
+selectTree("PAResourceOtoP.ProgramOptionsPanelImpl_STRATEGY", "[Run Strategies, Vivado Strategies, Vivado Synthesis Defaults]", 2, false); // TreeChooserPanel (C, ResizableWindow)
+selectTree("PAResourceQtoS.SettingsProjectRunPage_CHOOSE_REPORT_STRATEGY", "[Report Strategies, Vivado Report Strategies, Vivado Synthesis Default Reports]", 2, false); // TreeChooserPanel (C, ResizableWindow)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// bx (ck):  Change Settings : addNotify
+// q (ck): Reset Runs: addNotify
+dismissDialog("Change Settings"); // bx (ck)
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (q)
+// q (ck): Reset Runs: addNotify
+// bx (q):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: RUN_MODIFY
+// Tcl Message: set_property flow {Vivado Synthesis 2018} [get_runs synth_1] 
+// TclEventType: CREATE_IP_CATALOG
+dismissDialog("Resetting Runs"); // bx (q)
+dismissDialog("Settings"); // C (ck)
+// Tcl Message: update_ip_catalog 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jan 17 07:50:06 2019] Launched synth_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/synth_1/runme.log [Thu Jan 17 07:50:06 2019] Launched impl_1... Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // i (A, ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 8,121 MB. GUI used memory: 159 MB. Current time: 1/17/19 7:59:14 AM UTC
+// Elapsed time: 730 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Elapsed time: 322 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 207 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Huawei_F100_Gen4 (Huawei_Gen4.v)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 11 seconds
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V (q, ck)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V (q, ck)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V (q, ck)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xcvu9p-flgb2104-2-i 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PHY_BLOCK_NEW
+// TclEventType: PHY_RECT_SELECT
+// TclEventType: PHY_BLOCK_MODIFY
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: PHY_RECT_SELECT
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 8,139 MB. GUI used memory: 152 MB. Current time: 1/17/19 8:11:59 AM UTC
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /opt/Xilinx/Vivado/2018.2.op2258646/data/parts/xilinx/virtexuplus/devint/virtexuplus/xcvu9p/xcvu9p.xgd; ZipEntry: xcvu9p_floorplan.xgd elapsed time: 0.6s
+// Device: addNotify
+// Xgd.load filename: /opt/Xilinx/Vivado/2018.2.op2258646/data/parts/xilinx/virtexuplus/devint/virtexuplus/xcvu9p/xcvu9p.xgd; ZipEntry: xcvu9p_detail.xgd elapsed time: 4.8s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 2.4s
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/.Xil/Vivado-27157-ip-172-31-22-253.ap-southeast-1.compute.internal/pcie4_uscale_plus_0/pcie4_uscale_plus_0.dcp' for cell 'pcie4_7x_0_i' 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 285 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2_AR71275_op INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:102] 
+// Tcl Message: INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:102] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102] INFO: [Timing 38-2] Deriving generated clocks [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 9312.852 ; gain = 6.426 ; free physical = 2173 ; free virtual = 38871 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:103] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:104] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:105] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:106] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:107] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:114] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:114] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127] 
+// Tcl Message: Finished Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc] Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_7x_0_i/inst' Finished Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_7x_0_i/inst' Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc] for cell 'pcie4_7x_0_i/inst' 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:63] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:64] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:67] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:68] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:75] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:76] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 9 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 3 instances   RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances  
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 5.5s
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 9335.871 ; gain = 29.445 ; free physical = 2020 ; free virtual = 38727 
+// 'dP' command handler elapsed time: 27 seconds
+// S (ck): Critical Messages: addNotify
+// Elapsed time: 28 seconds
+dismissDialog("Open Synthesized Design"); // bx (ck)
+// RouteApi::initDelayMediator elapsed time: 4.7s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "riffa_wrapper_vc709.v", 2); // k (j, ck)
+// [GUI Memory]: 287 MB (+130kb) [07:23:08]
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, ck)
+// PAPropertyPanels.initPanels (refclk_ibuf (IBUFDS_GTE2)) elapsed time: 0.2s
+// Elapsed time: 31 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[Huawei_F100_Gen4, refclk_ibuf (IBUFDS_GTE2)]", 4, false); // aW (O, ck)
+// Elapsed time: 12 seconds
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V (q, ck)
+selectMenuItem(RDIResource.MainWinMenuMgr_LOAD, "I/O Planning"); // ad (ck)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V (q, ck)
+// Package: addNotify
+// [GUI Memory]: 302 MB (+1027kb) [07:24:19]
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "LED (8) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ;  ;  ; ", 1); // z (O, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "LED[7] ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ;  ;  ; ", 2, "LED[7]", 0, false); // z (O, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 317 MB (+337kb) [07:36:43]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 8,178 MB. GUI used memory: 262 MB. Current time: 1/17/19 8:26:15 AM UTC
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 8,202 MB. GUI used memory: 261 MB. Current time: 1/17/19 8:27:45 AM UTC
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 2193 seconds
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "LED (8) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ;  ;  ; ", 1); // z (O, ck)
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (PCI_EXP_TXP) elapsed time: 0.2s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "PCI_EXP_TXP (4) ; OUT ;  ;  ;  ;  ; (Multiple) ; (Multiple) ;  ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; 0 ;  ;  ; ", 5, "PCI_EXP_TXP (4)", 0, true); // z (O, ck) - Node
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (3) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 6); // z (O, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "PCIE_REFCLK_N ; IN ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ;  ;  ;  ; ", 7, "PCIE_REFCLK_N", 0, false); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "PCI_EXP_TXP (4) ; OUT ;  ;  ;  ;  ; (Multiple) ; (Multiple) ;  ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; 0 ;  ;  ; ", 5); // z (O, ck)
+// Elapsed time: 59 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, fx600.xdc]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("fx600.xdc", 328, 174); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pci_exp", true); // l (aQ, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pci_exp"); // l (aQ, ck)
+selectCodeEditor("fx600.xdc", 314, 194); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "af38", true); // l (aQ, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "af38"); // l (aQ, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "PCI_EXP_RXN (4) ; IN ;  ;  ;  ;  ; (Multiple) ; (Multiple) ;  ;  ;  ; (Multiple) ; (Multiple) ; 0 ;  ;  ; ", 2); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "PCI_EXP_RXP (4) ; IN ;  ;  ;  ;  ; (Multiple) ; (Multiple) ;  ;  ;  ; (Multiple) ; (Multiple) ; 0 ;  ;  ; ", 6); // z (O, ck)
+selectCodeEditor("fx600.xdc", 283, 293); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "af43"); // l (aQ, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddra_pin_x8.xdc]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "af43"); // l (aQ, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrb_pin_x8.xdc]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrb_pin_x8.xdc]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "af43"); // l (aQ, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrc_pin_x8.xdc]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrc_pin_x8.xdc]", 8, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 8,235 MB. GUI used memory: 268 MB. Current time: 1/17/19 8:52:40 AM UTC
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "af43"); // l (aQ, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrd_pin_x8.xdc]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ddrd_pin_x8.xdc]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "af43", true); // l (aQ, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 256 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "LED (8) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ;  ;  ; ", 1); // z (O, ck)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "LED (8) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ;  ;  ; ", 1); // z (O, ck)

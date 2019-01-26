@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 02:54:04 2019
+# Process ID: 2913
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj
+# Command line: vivado ./Huawei_Gen4-try.xpr
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.log
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ./Huawei_Gen4-try.xpr
+INFO: [Project 1-313] Project file moved from '/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/prj' since last save.
+WARNING: [Project 1-312] File not found as '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/VC709_Gen3x4If128.v'; using path '/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/hdl/VC709_Gen3x4If128.v' instead.
+WARNING: [Project 1-312] File not found as '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.srcs/sources_1/ip/pcie4_uscale_plus_0.xcix'; using path '/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.srcs/sources_1/ip/pcie4_uscale_plus_0.xcix' instead.
+WARNING: [Project 1-312] File not found as '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.srcs/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci'; using path '/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.srcs/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'pcie4_uscale_plus_0_synth_1' not found
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.ip_user_files'; using path '/home/centos/riffa/riffa-master/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.ip_user_files' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2.op2258646/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 6490.188 ; gain = 463.906 ; free physical = 2273 ; free virtual = 41084
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Thu Jan 17 02:55:16 2019] Launched pcie4_uscale_plus_0_synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/pcie4_uscale_plus_0_synth_1/runme.log
+[Thu Jan 17 02:55:16 2019] Launched synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Jan 17 03:05:15 2019] Launched synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/synth_1/runme.log
+set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Thu Jan 17 03:27:41 2019] Launched synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/synth_1/runme.log
+[Thu Jan 17 03:27:41 2019] Launched impl_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/impl_1/runme.log
+set_property is_global_include false [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Thu Jan 17 03:29:26 2019] Launched synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/synth_1/runme.log
+[Thu Jan 17 03:29:26 2019] Launched impl_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Jan 17 04:10:35 2019] Launched synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/synth_1/runme.log
+set_property is_global_include false [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Jan 17 06:28:02 2019] Launched synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/synth_1/runme.log
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+not writing pins
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Jan 17 06:57:09 2019] Launched synth_1...
+Run output will be captured here: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4-try.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 17 07:02:07 2019...

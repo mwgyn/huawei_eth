@@ -1,0 +1,152 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 00:48:57 2019
+# Process ID: 27157
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj
+# Command line: vivado ./Huawei_Gen4.xpr
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.log
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ./Huawei_Gen4.xpr
+update_compile_order -fileset sources_1
+update_files -from_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v -to_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/VC709_Gen3x4If128.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/PCIeGen3x4If128.xci]
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+set_property is_global_include false [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+update_compile_order -fileset sources_1
+set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+generate_target all [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci]
+export_ip_user_files -of_objects [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci]
+export_simulation -of_objects [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -directory /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.ip_user_files/sim_scripts -ip_user_files_dir /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.ip_user_files -ipstatic_source_dir /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/modelsim} {questa=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/questa} {ies=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/ies} {xcelium=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/xcelium} {vcs=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/vcs} {riviera=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci]
+export_ip_user_files -of_objects [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci]
+export_simulation -of_objects [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -directory /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.ip_user_files/sim_scripts -ip_user_files_dir /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.ip_user_files -ipstatic_source_dir /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/modelsim} {questa=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/questa} {ies=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/ies} {xcelium=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/xcelium} {vcs=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/vcs} {riviera=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_target all [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci]
+export_ip_user_files -of_objects  [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -sync -no_script -force -quiet
+generate_target all [get_files  /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci]
+export_ip_user_files -of_objects [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci]
+launch_runs -jobs 2 pcie4_uscale_plus_0_synth_1
+export_simulation -of_objects [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci] -directory /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.ip_user_files/sim_scripts -ip_user_files_dir /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.ip_user_files -ipstatic_source_dir /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/modelsim} {questa=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/questa} {ies=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/ies} {xcelium=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/xcelium} {vcs=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/vcs} {riviera=/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/PCIeGen3x4If128.xci] -no_script -reset -force -quiet
+remove_files  -fileset PCIeGen3x4If128 /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/PCIeGen3x4If128.xci
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_project
+open_project /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.xpr
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrb_pin_x8.xdc /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrc_pin_x8.xdc /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrd_pin_x8.xdc /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc}
+export_ip_user_files -of_objects  [get_files /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/constr/VC709_Gen3x4If128.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/constr/VC709_Gen3x4If128.xdc
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc]
+set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrb_pin_x8.xdc]
+set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrc_pin_x8.xdc]
+set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrd_pin_x8.xdc]
+set_property used_in_synthesis false [get_files  /home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+config_webtalk -user on
+reset_run impl_1
+set_property flow {Vivado Implementation 2018} [get_runs impl_1]
+update_ip_catalog
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+get_ports pin_pcie_ref_clk_p
+open_run synth_1 -name synth_1
+get_ports pin_pcie_ref_clk_p
+get_ports
+get_ports pcie_ref_clk_p
+get_ports pin_pcie_ref_clk_p
+get_ports pin_pcie_ref_clk_
+get_ports pin_pcie_ref_clk
+set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p]
+set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref]
+set_property PACKAGE_PIN AP11 [get_ports pin_pcie_ref_clk_p]
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+set_property is_global_include false [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+set_property coreContainer.enable 1 [current_project]
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+set_property flow {Vivado Synthesis 2018} [get_runs synth_1]
+update_ip_catalog
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run synth_1 -name synth_1

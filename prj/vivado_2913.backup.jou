@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 02:54:04 2019
+# Process ID: 2913
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj
+# Command line: vivado ./Huawei_Gen4-try.xpr
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.log
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ./Huawei_Gen4-try.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+set_property is_global_include false [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+set_property is_global_include true [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property is_global_include false [get_files  /home/centos/daniel/riffa/fpga/riffa_hdl/functions.vh]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1

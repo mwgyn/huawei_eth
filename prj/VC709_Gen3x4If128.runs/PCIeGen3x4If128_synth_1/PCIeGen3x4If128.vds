@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jan 15 12:43:46 2019
+# Process ID: 25454
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/PCIeGen3x4If128_synth_1
+# Command line: vivado -log PCIeGen3x4If128.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PCIeGen3x4If128.tcl
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/PCIeGen3x4If128_synth_1/PCIeGen3x4If128.vds
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/PCIeGen3x4If128_synth_1/vivado.jou
+#-----------------------------------------------------------
+source PCIeGen3x4If128.tcl -notrace
+Command: synth_design -top PCIeGen3x4If128 -part xcvu9p-flgb2104-2-i -mode out_of_context
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'PCIeGen3x4If128' is locked:
+* IP definition 'Virtex-7 FPGA Gen3 Integrated Block for PCI Express (4.1)' for IP 'PCIeGen3x4If128' (customized with software release 2015.4) has a newer minor version in the IP Catalog.
+* Current project part 'xcvu9p-flgb2104-2-i' and the part 'xc7vx690tffg1761-2' used to customize the IP 'PCIeGen3x4If128' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Designutils 20-414] HRTInvokeSpec : No Verilog or VHDL sources specified
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 15 12:44:02 2019...

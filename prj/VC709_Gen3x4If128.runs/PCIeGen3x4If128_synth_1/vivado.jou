@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jan 15 12:43:46 2019
+# Process ID: 25454
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/PCIeGen3x4If128_synth_1
+# Command line: vivado -log PCIeGen3x4If128.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PCIeGen3x4If128.tcl
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/PCIeGen3x4If128_synth_1/PCIeGen3x4If128.vds
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/VC709_Gen3x4If128.runs/PCIeGen3x4If128_synth_1/vivado.jou
+#-----------------------------------------------------------
+source PCIeGen3x4If128.tcl -notrace

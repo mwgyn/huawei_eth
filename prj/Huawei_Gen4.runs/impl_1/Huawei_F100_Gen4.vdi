@@ -1,0 +1,629 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 07:54:39 2019
+# Process ID: 1291
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1
+# Command line: vivado -log Huawei_F100_Gen4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Huawei_F100_Gen4.tcl -notrace
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/Huawei_F100_Gen4.vdi
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Huawei_F100_Gen4.tcl -notrace
+Command: link_design -top Huawei_F100_Gen4 -part xcvu9p-flgb2104-2-i
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/prj/Huawei_Gen4.runs/impl_1/.Xil/Vivado-1291-ip-172-31-22-253.ap-southeast-1.compute.internal/pcie4_uscale_plus_0/pcie4_uscale_plus_0.dcp' for cell 'pcie4_7x_0_i'
+CRITICAL WARNING: [Netlist 29-180] Cell 'IBUFDS_GTE2' is not a supported primitive for virtexuplus part: xcvu9p-flgb2104-2-i.  Instance 'refclk_ibuf' will be treated as a black box, not an architecture primitive [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v:198]
+Resolution: Modify instantiation of primitive to match Xilinx primitive. Please review the guidelines in the Design Methodology Guide UG949 to replace this primitive with a supported primitive.
+INFO: [Netlist 29-17] Analyzing 285 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2_AR71275_op
+INFO: [Device 21-403] Loading part xcvu9p-flgb2104-2-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/ip_0/synth/pcie4_uscale_plus_0_gt.xdc] for cell 'pcie4_7x_0_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst'
+Finished Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/ip_0/synth/pcie4_uscale_plus_0_gt.xdc] for cell 'pcie4_7x_0_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst'
+Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y1.xdc] for cell 'pcie4_7x_0_i/inst'
+Finished Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y1.xdc] for cell 'pcie4_7x_0_i/inst'
+Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[59]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[58]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[57]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[56]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_t[7]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_c[7]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[61]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[60]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[62]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[63]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dm_dbi_n[7]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[42]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[43]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[41]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[40]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_t[5]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_c[5]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[44]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[45]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[47]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[46]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dm_dbi_n[5]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[9]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[8]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[10]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[11]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_t[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_c[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[13]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[12]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[14]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[15]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dm_dbi_n[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[33]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[32]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[35]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[34]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_t[4]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_c[4]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[37]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[36]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[38]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[39]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dm_dbi_n[4]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[3]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[2]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_t[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_c[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[4]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[5]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[7]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dm_dbi_n[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[10]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[14]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[12]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_ba[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[8]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[5]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_cs_n[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[3]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_odt[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[13]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_100m_ref_clk_p'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_100m_ref_clk_n'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_odt[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_ck_t'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_ck_c'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_par'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_ba[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[16]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[15]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_cs_n[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[9]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_bg[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_rst_n'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_act_n'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[11]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_bg[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[4]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[2]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_addr[7]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_cke[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_cke[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[50]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[49]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[48]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[51]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_t[6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dqs_c[6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[54]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[55]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[53]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dq[52]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddra_72b_dm_dbi_n[6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:102]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc:102]
+Finished Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddra_pin_x8.xdc]
+Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrb_pin_x8.xdc]
+Finished Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrb_pin_x8.xdc]
+Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrc_pin_x8.xdc]
+Finished Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrc_pin_x8.xdc]
+Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrd_pin_x8.xdc]
+Finished Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/ddrd_pin_x8.xdc]
+Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[0].u_eth100g_inst/u_eth100g/u_x100g/inst/x100g_gt_i/inst/gen_gtwizard_gtye4_top.x100g_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[35].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:79]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[0].u_eth100g_inst/u_eth100g/u_x100g/inst/x100g_gt_i/inst/gen_gtwizard_gtye4_top.x100g_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[35].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[1].GTYE4_CHANNEL_PRIM_INST'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:80]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[0].u_eth100g_inst/u_eth100g/u_x100g/inst/x100g_gt_i/inst/gen_gtwizard_gtye4_top.x100g_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[35].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[2].GTYE4_CHANNEL_PRIM_INST'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:81]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[0].u_eth100g_inst/u_eth100g/u_x100g/inst/x100g_gt_i/inst/gen_gtwizard_gtye4_top.x100g_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[35].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[3].GTYE4_CHANNEL_PRIM_INST'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:82]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~ GEN_MAC_INST[0].u_eth100g_inst/u_eth100g/u_x100g/inst/i_x100g_top/* && REF_NAME==CMACE4}'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:83]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[1].u_eth100g_inst/u_eth100g/u_x100g/inst/x100g_gt_i/inst/gen_gtwizard_gtye4_top.x100g_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[35].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:84]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[1].u_eth100g_inst/u_eth100g/u_x100g/inst/x100g_gt_i/inst/gen_gtwizard_gtye4_top.x100g_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[35].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[1].GTYE4_CHANNEL_PRIM_INST'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:85]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[1].u_eth100g_inst/u_eth100g/u_x100g/inst/x100g_gt_i/inst/gen_gtwizard_gtye4_top.x100g_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[35].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[2].GTYE4_CHANNEL_PRIM_INST'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:86]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[1].u_eth100g_inst/u_eth100g/u_x100g/inst/x100g_gt_i/inst/gen_gtwizard_gtye4_top.x100g_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[35].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[3].GTYE4_CHANNEL_PRIM_INST'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:87]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~ GEN_MAC_INST[1].u_eth100g_inst/u_eth100g/u_x100g/inst/i_x100g_top/* && REF_NAME==CMACE4}'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:88]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[0].u_eth100g_inst'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:91]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[0].u_pkt_gen_inst'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:91]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[1].u_eth100g_inst'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:91]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST[0].u_pkt_gen_inst'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:91]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST1[8].u_eth100g_inst'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:91]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST1[8].u_pkt_gen_inst'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:91]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:91]
+WARNING: [Vivado 12-180] No cells matched 'GEN_MAC_INST1[8].u_eth100g_inst/u_eth100g/u_x100g'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:92]
+CRITICAL WARNING: [Vivado 12-1039] No cells specified to remove. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:92]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports pin_sys_clk_p]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:94]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports pin_pcie_ref_clk_p]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:95]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports {pin_caui4_ref_clk_p[0]}]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:96]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports {pin_caui4_ref_clk_p[1]}]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:97]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_clkm_top/u_clkm/u_mmcm_sys/inst/mmcme3_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:99]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-objects [get_pins u_clkm_top/u_clkm/u_mmcm_sys/inst/mmcme3_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:99]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'GEN_MAC_INST[0].u_eth100g_inst/u_eth100g/u_x100g/inst/txoutclk_out'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:100]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-objects [get_nets {GEN_MAC_INST[0].u_eth100g_inst/u_eth100g/u_x100g/inst/txoutclk_out}]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:100]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'GEN_MAC_INST[1].u_eth100g_inst/u_eth100g/u_x100g/inst/txoutclk_out'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:101]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-objects [get_nets {GEN_MAC_INST[1].u_eth100g_inst/u_eth100g/u_x100g/inst/txoutclk_out}]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:101]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102]
+INFO: [Timing 38-2] Deriving generated clocks [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102]
+WARNING: [Vivado 12-627] No clocks matched 'pin_sys_clk_p'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2645.699 ; gain = 260.172 ; free physical = 367 ; free virtual = 37016
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks pin_sys_clk_p]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:102]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_sysclk_out0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:103]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:103]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks mmcm_sysclk_out0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:103]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:103]
+WARNING: [Vivado 12-627] No clocks matched 'pin_caui4_ref_clk_p0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:104]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:104]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks pin_caui4_ref_clk_p0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:104]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:104]
+WARNING: [Vivado 12-627] No clocks matched 'pin_caui4_ref_clk_p1'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:105]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:105]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks pin_caui4_ref_clk_p1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:105]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:105]
+WARNING: [Vivado 12-627] No clocks matched 'eth100g_0_txoutclk'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:106]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:106]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks eth100g_0_txoutclk]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:106]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:106]
+WARNING: [Vivado 12-627] No clocks matched 'eth100g_1_txoutclk'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:107]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:107]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks eth100g_1_txoutclk]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:107]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:107]
+WARNING: [Vivado 12-508] No pins matched 'u_hf_hpi_top/u_hpi/bar_wdata_reg*/C'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:109]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_pins u_hf_hpi_top/u_hpi/bar_wdata_reg*/C]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:109]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_hf_hpi_top/u_hpi/cpu_addr_pre_reg*/C'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:110]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_pins u_hf_hpi_top/u_hpi/cpu_addr_pre_reg*/C]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:110]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_hf_hpi_top/u_hpi/bar_wdata_reg*/C'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:112]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_pins u_hf_hpi_top/u_hpi/bar_wdata_reg*/C]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:112]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_hf_hpi_top/u_hpi/cpu_addr_pre_reg*/C'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:113]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_pins u_hf_hpi_top/u_hpi/cpu_addr_pre_reg*/C]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:113]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'pin_pcie_ref_clk_p'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:114]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:114]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_sysclk_out0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:114]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:114]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks pin_pcie_ref_clk_p]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:114]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_pcie_top_x16/u_pcie_ep_top_16x/u_pcie_ep/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_userclk/O'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_pcie_top_x16/u_pcie_ep_top_16x/u_pcie_ep/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_userclk/O]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_sysclk_out0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_pcie_top_x16/u_pcie_ep_top_16x/u_pcie_ep/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_userclk/O]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:115]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT5'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT5]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117]
+WARNING: [Vivado 12-508] No pins matched 'u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT5]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:117]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118]
+WARNING: [Vivado 12-508] No pins matched 'u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:118]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119]
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:119]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120]
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:120]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121]
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:121]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123]
+WARNING: [Vivado 12-508] No pins matched 'u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT5'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT5]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:123]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124]
+WARNING: [Vivado 12-508] No pins matched 'u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_phy_ddrc_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:124]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125]
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddra_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:125]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126]
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrb_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:126]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127]
+WARNING: [Vivado 12-508] No pins matched 'u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT6]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks -of_objects [get_pins u_ul_pr_top/u_phy_ddrd_72b/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0]]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:127]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'pin_pcie_ref_clk_p' not found. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:131]
+CRITICAL WARNING: [Vivado 12-4739] set_input_jitter:No valid object(s) found for '-clock pin_pcie_ref_clk_p'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:131]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'pin_caui4_ref_clk_p0' not found. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:132]
+CRITICAL WARNING: [Vivado 12-4739] set_input_jitter:No valid object(s) found for '-clock pin_caui4_ref_clk_p0'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:132]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'pin_caui4_ref_clk_p1' not found. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:133]
+CRITICAL WARNING: [Vivado 12-4739] set_input_jitter:No valid object(s) found for '-clock pin_caui4_ref_clk_p1'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:133]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched '*spi_sck_reg'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:145]
+WARNING: [Vivado 12-508] No pins matched '*STARTUP*_inst/USRCCLKO'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:145]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_cells -hier *spi_sck_reg]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:145]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched '*spi_mosi_reg'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:146]
+WARNING: [Vivado 12-508] No pins matched '*STARTUP*_inst/DO[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:146]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_cells -hier *spi_mosi_reg]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:146]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched '*STARTUP*_inst/DI[1]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:147]
+WARNING: [Vivado 12-180] No cells matched '*rx_data_buf_sft_reg[0]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:147]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins -hier {*STARTUP*_inst/DI[1]}]'. [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc:147]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/centos/huawei/fpga-accel/FX600/bare_metal/ref_design/5_prj/1_config/fx600.xdc]
+Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_7x_0_i/inst'
+Finished Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_7x_0_i/inst'
+Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc] for cell 'pcie4_7x_0_i/inst'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:63]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:63]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:63]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:63]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:64]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:64]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:64]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:64]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:67]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:67]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:67]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:67]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:68]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:68]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:68]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:68]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:75]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:75]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:75]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:75]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:76]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:76]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]'. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:76]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:76]
+Finished Parsing XDC File [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc] for cell 'pcie4_7x_0_i/inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2.op2258646/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie4_7x_0_i/inst/user_lnk_up_cdc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2.op2258646/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie4_7x_0_i/inst/user_lnk_up_cdc'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2.op2258646/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie4_7x_0_i/inst/user_reset_cdc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2.op2258646/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie4_7x_0_i/inst/user_reset_cdc'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'IBUFDS_GTE2' instantiated as 'refclk_ibuf' [/home/centos/daniel/riffa/fpga/xilinx/huawei/huawei_pcie4/hdl/Huawei_Gen4.v:198]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+48 Infos, 190 Warnings, 157 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:26 . Memory (MB): peak = 2645.703 ; gain = 955.613 ; free physical = 387 ; free virtual = 37036
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu9p'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'refclk_ibuf' of type 'IBUFDS_GTE2' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2661.711 ; gain = 16.008 ; free physical = 377 ; free virtual = 37032
+INFO: [Common 17-83] Releasing license: Implementation
+53 Infos, 190 Warnings, 157 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 17 07:56:31 2019...

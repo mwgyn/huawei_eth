@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.2_AR71275_op (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jan 15 12:16:38 2019
+# Process ID: 23505
+# Current directory: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj
+# Command line: vivado ./VC709_Gen3x4If128.xpr
+# Log file: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/vivado.log
+# Journal file: /home/centos/daniel/riffa/fpga/xilinx/vc709/VC709_Gen3x4If128/prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -part xcvu9p-flga2104-1-e ./VC709_Gen3x4If128.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property board_part xilinx.com:vcu118:part0:2.0 [current_project]
+update_ip_catalog
+set_property part xcvu9p-flgb2104-2-i [current_project]
+update_ip_catalog
+update_ip_catalog
+report_ip_status -name ip_status 
+reset_run PCIeGen3x4If128_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
